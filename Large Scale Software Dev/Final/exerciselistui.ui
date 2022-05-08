@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExerciseListUi</class>
+ <widget class="QDialog" name="ExerciseListUi">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>562</width>
+    <height>557</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
+     <item>
+      <widget class="QComboBox" name="ExerciseSelect">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>10</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="currentText">
+        <string/>
+       </property>
+       <property name="maxVisibleItems">
+        <number>20</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="AddNew">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Add New</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="DeleteExercise">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Name:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="ExerciseText">
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Description:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPlainTextEdit" name="ExerciseDesc">
+     <property name="plainText">
+      <string>Description</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Muscle Group:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QComboBox" name="ExerciseMuscle">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maxVisibleItems">
+        <number>10</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>None</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Biceps</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cardio</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chest</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Core</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Forearms</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Full Body</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Legs</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Neck</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Shoulders</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Triceps</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Wrist</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Burn Rate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QDoubleSpinBox" name="ExerciseBurnRate">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="singleStep">
+        <double>0.010000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="ExerciseCategory">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="maxVisibleItems">
+        <number>10</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>None</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Stretch</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Category</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Equipment</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QListWidget" name="Equipment">
+       <property name="sortingEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QPushButton" name="SelectEquipment">
+         <property name="text">
+          <string>&lt;&lt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="RemoveEquipment">
+         <property name="text">
+          <string>&gt;&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>*Add New*</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2"/>
+     </item>
+     <item>
+      <widget class="QListWidget" name="EquipmentNOT">
+       <property name="sortingEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="EditExercise">
+     <property name="text">
+      <string>Set Exercise Details</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ExerciseListUi</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>500</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ExerciseListUi</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>500</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WorkoutListing</class>
+ <widget class="QWidget" name="WorkoutListing">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>347</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPlainTextEdit" name="plainTextEdit"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Start Date</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDateEdit" name="dateEdit"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Days per Week</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSpinBox" name="spinBox"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Total days to Add</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSpinBox" name="spinBox_2"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
