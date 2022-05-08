@@ -1,0 +1,951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>ECE4524: Artificial Intelligence and Engineering Applications, Spring 2022</title>
+</head>
+<body>
+<div id="layout-content">
+<div id="toptitle">
+<h1>ECE4524: Artificial Intelligence and Engineering Applications, Spring 2022</h1>
+</div>
+<h2>Project 0: Unix/Python/Autograder Tutorial</h2>
+<h3>Introduction</h3>
+<p>The projects for this class assume you use Python 3.8 or later.</p>
+<p>Project 0 will cover the following:</p>
+<ul>
+<li><p>A mini-UNIX tutorial (particularly important if you work on instructional machines),</p>
+</li>
+<li><p>A mini-Python tutorial,</p>
+</li>
+<li><p>Project grading: Every project's release includes its autograder for you to run yourself.</p>
+</li>
+</ul>
+<p><b>Files to Edit and Submit:</b> You will fill in portions of <tt>addition.py, buyLotsOfFruit.py, and shopSmart.py</tt> in <a href="tutorial.zip">tutorial.zip</a> during the assignment. You should submit these files with your code and comments. Please do not change the other files in this distribution or submit any of our original files other than these files.</p>
+<p><b>Evaluation:</b> Your code will be autograded for technical correctness. Please do not change the names of any provided functions or classes within the code, or you will wreak havoc on the autograder. However, the correctness of your implementation &ndash; not the autograder's judgements &ndash; will be the final judge of your score. If necessary, we will review and grade assignments individually to ensure that you receive due credit for your work.</p>
+<p><b>Academic Dishonesty:</b> We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. We trust you all to submit your own work only; please don't let us down. If you do, we will pursue the strongest consequences available to us.</p>
+<p><b>Getting Help:</b> You are not alone! If you find yourself stuck on something, contact the course staff for help. Office hours, section, and the discussion forum are there for your support; please use them. If you can't make our office hours, let us know and we will schedule more. We want these projects to be rewarding and instructional, not frustrating and demoralizing. But, we don't know when or how to help unless you ask.</p>
+<p><b>Discussion:</b> Please be careful not to post spoilers.</p>
+<h3>Unix Basics</h3>
+<p>Here are basic commands to navigate UNIX and edit files.</p>
+<h4>File/Directory Manipulation</h4>
+<p>When you open a terminal window, you're placed at a command prompt:</p>
+<p><tt>[ajit@ajitsmbp ~]$</tt></p>
+<p>The prompt shows your username, the host you are logged onto, and your current location in the directory structure (your path). The <tt>~</tt> (tilde) character is shorthand for your home directory. Note your prompt may look slightly different. To make a directory, use the <tt>mkdir</tt> command. Use <tt>cd</tt> to change to that directory:</p>
+<p><tt>[ajit@ajitsmbp ~]$ mkdir foo</tt>
+<tt>[ajit@ajitsmbp ~]$ cd foo</tt>
+<tt>[ajit@ajitsmbp ~/foo]$</tt></p>
+<p>Use <tt>ls</tt> to see a listing of the contents of a directory, and <tt>touch</tt> to create an empty file:</p>
+<p><tt>[ajit@ajitsmbp ~/foo]$ ls</tt><br />
+<tt>[ajit@ajitsmbp ~/foo]$ touch hello_world</tt><br />
+<tt>[ajit@ajitsmbp ~/foo]$ ls</tt><br />
+<tt>hello_world</tt><br />
+<tt>[ajit@ajitsmbp ~/foo]$ cd ..</tt><br />
+<tt>[ajit@ajitsmbp ~]$</tt><br /></p>
+<p>Download <a href="python_basics.zip">python_basics.zip</a> into your home directory (note: the zip file's name may be slightly different when you download it). Use <tt>unzip</tt> to extract the contents of the zip file:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~]$ ls *.zip
+python_basics.zip
+[ajit@ajitsmbp ~]$ unzip python_basics.zip
+[ajit@ajitsmbp ~]$ cd python_basics
+[ajit@ajitsmbp ~/python_basics]$ ls
+foreach.py
+helloWorld.py
+listcomp.py
+listcomp2.py
+quickSort.py
+shop.py
+shopTest.py
+</pre></div></div>
+<p>Some other useful Unix commands:</p>
+<ul>
+<li><p><tt>cp</tt> copies a file or files</p>
+</li>
+<li><p><tt>rm</tt> removes (deletes) a file</p>
+</li>
+<li><p><tt>mv</tt> moves a file (i.e., cut<i>paste instead of copy</i>paste)</p>
+</li>
+<li><p><tt>man</tt> displays documentation for a command</p>
+</li>
+<li><p><tt>pwd</tt> prints your current path</p>
+</li>
+<li><p><tt>xterm</tt> opens a new terminal window</p>
+</li>
+<li><p><tt>firefox</tt> opens a web browser</p>
+</li>
+<li><p>Press &ldquo;Ctrl-c&rdquo; to kill a running process</p>
+</li>
+<li><p>Append <tt>&amp;</tt> to a command to run it in the background</p>
+</li>
+<li><p><tt>fg</tt> brings a program running in the background to the foreground</p>
+</li>
+</ul>
+<h4>The Emacs text editor</h4>
+<p>Emacs is a customizable text editor which has some nice features specifically tailored for programmers. However, you can use any other text editor that you may prefer (such as <a href="https://atom.io/">atom</a>, <tt>vi</tt>, <tt>pico</tt>, or <tt>joe</tt>).</p>
+<p>To run Emacs, type <tt>emacs</tt> at a command prompt:</p>
+<p><tt>[ajit@ajitsmbp ~/python_basics]$ emacs helloWorld.py &amp;</tt><br />
+<tt>[1] 3262</tt></p>
+<p>Here we gave the argument <tt>helloWorld.py</tt> which will either open that file for editing if it exists, or create it otherwise. Emacs notices that this is a Python source file (because of the <tt>.py</tt> ending) and enters Python-mode, which is supposed to help you write code. When editing this file you may notice some of that text becomes automatically colored: this is syntax highlighting to help you distinguish items such as keywords, variables, strings, and comments. Pressing Enter, Tab, or Backspace may cause the cursor to jump to weird locations: this is because Python is very picky about indentation, and Emacs is predicting the proper tabbing that you should use.</p>
+<p>Some basic Emacs editing commands (<tt>C-</tt> means &ldquo;while holding the Ctrl-key&rdquo;):</p>
+<ul>
+<li><p><tt>C-x C-s</tt> Save the current file</p>
+</li>
+<li><p><tt>C-x C-f</tt> Open a file, or create a new file it if doesn't exist</p>
+</li>
+<li><p><tt>C-k</tt> Cut a line, add it to the clipboard</p>
+</li>
+<li><p><tt>C-y</tt> Paste the contents of the clipboard</p>
+</li>
+<li><p><tt>C-_</tt> Undo</p>
+</li>
+<li><p><tt>C-g</tt> Abort a half-entered command
+You can also copy and paste using just the mouse. Using the left button, select a region of text to copy. Click the middle button to paste.</p>
+</li>
+</ul>
+<p>There are two ways you can use Emacs to develop Python code. The most straightforward way is to use it just as a text editor: create and edit Python files in Emacs; then run Python to test the code somewhere else, like in a terminal window. Alternatively, you can run Python inside Emacs: see the options under &ldquo;Python&rdquo; in the menubar, or type <tt>C-c !</tt> to start a Python interpreter in a split screen. (Use <tt>C-x</tt> o to switch between the split screens, or just click if <tt>C-x</tt> doesn't work).</p>
+<p>If you want to spend some extra setup time becoming a power user, you can try an IDE like <a href="https://www.jetbrains.com/pycharm/">Pycharm</a>.</p>
+<h3>Python Basics</h3>
+<p>Required Files
+You can download all of the files associated with the Python mini-tutorial as a zip archive: <a href="python_basics.zip">python_basics.zip</a>. If you did the unix tutorial in the previous tab, you've already downloaded and unzipped this file.</p>
+<h4>Table of Contents</h4>
+<ul>
+<li><p>Invoking the Interpreter</p>
+</li>
+<li><p>Operators</p>
+</li>
+<li><p>Strings</p>
+</li>
+<li><p>Dir and Help</p>
+</li>
+<li><p>Built-in Data Structures</p>
+<ul>
+<li><p>Lists</p>
+</li>
+<li><p>Tuples</p>
+</li>
+<li><p>Sets</p>
+</li>
+<li><p>Dictionaries</p>
+</li></ul>
+</li>
+<li><p>Writing Scripts</p>
+</li>
+<li><p>Indentation</p>
+</li>
+<li><p>Tabs vs Spaces</p>
+</li>
+<li><p>Writing Functions</p>
+</li>
+<li><p>Object Basics</p>
+<ul>
+<li><p>Defining Classes</p>
+</li>
+<li><p>Using Objects</p>
+</li>
+<li><p>Static vs Instance Variables</p>
+</li></ul>
+</li>
+<li><p>Tips and Tricks</p>
+</li>
+<li><p>Troubleshooting</p>
+</li>
+<li><p>More References</p>
+</li>
+</ul>
+<p>The programming assignments in this course will be written in Python, an interpreted, object-oriented language that shares some features with both Java and Scheme. This tutorial will walk through the primary syntactic constructions in <a href="http://www.python.org/about/">Python</a>, using short examples.</p>
+<p>We encourage you to type all python shown in the tutorial onto your own machine. Make sure it responds the same way.</p>
+<p>You may find the Troubleshooting section helpful if you run into problems. It contains a list of the frequent problems former students have encountered when following this tutorial.</p>
+<h4>Invoking the Interpreter</h4>
+<p>Python can be run in one of two modes. It can either be used interactively, via an interpeter, or it can be called from the command line to execute a script. We will first use the Python interpreter interactively.</p>
+<p>You invoke the interpreter by entering <tt>python</tt> (or possibly <tt>python3</tt>)  at the Unix command prompt.</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~]$ python
+Python 3.8.1 | (more information will appear here here)
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt;
+</pre></div></div>
+<h4>Operators</h4>
+<p>The Python interpreter can be used to evaluate expressions, for example simple arithmetic expressions. If you enter such expressions at the prompt (<tt>&gt;&gt;&gt;</tt>) they will be evaluated and the result will be returned on the next line.</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; 1 + 1
+2
+&gt;&gt;&gt; 2 * 3
+6
+</pre></div></div>
+<p>Boolean operators also exist in Python to manipulate the primitive <tt>True</tt> and <tt>False</tt> values.</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; 1==0
+False
+&gt;&gt;&gt; not (1==0)
+True
+&gt;&gt;&gt; (2==2) and (2==3)
+False
+&gt;&gt;&gt; (2==2) or (2==3)
+True
+</pre></div></div>
+<h4>Strings</h4>
+<p>Like Java, Python has a built in string type. The <tt>+</tt> operator is overloaded to do string concatenation on string values.</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; 'artificial' + "intelligence"
+'artificialintelligence'
+</pre></div></div>
+<p>There are many built-in methods which allow you to manipulate strings.</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; 'artificial'.upper()
+'ARTIFICIAL'
+&gt;&gt;&gt; 'HELP'.lower()
+'help'
+&gt;&gt;&gt; len('Help')
+4
+</pre></div></div>
+<p>Notice that we can use either single quotes <tt>' '</tt> or double quotes <tt>" "</tt> to surround string. This allows for easy nesting of strings.</p>
+<p>We can also store expressions into variables.</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; s = 'hello world'
+&gt;&gt;&gt; print s
+hello world
+&gt;&gt;&gt; s.upper()
+'HELLO WORLD'
+&gt;&gt;&gt; len(s.upper())
+11
+&gt;&gt;&gt; num = 8.0
+&gt;&gt;&gt; num += 2.5
+&gt;&gt;&gt; print num
+10.5
+</pre></div></div>
+<p>In Python, you do not have declare variables before you assign to them.</p>
+<h4>Exercise: Dir and Help</h4>
+<p>Learn about the methods Python provides for strings. To see what methods Python provides for a datatype, use the dir and help commands:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; s = 'abc'
+
+&gt;&gt;&gt; dir(s)
+['__add__', '__class__', '__contains__', '__delattr__', '__doc__', '__eq__', '__ge__', '__getattribute__',
+'__getitem__', '__getnewargs__', '__getslice__', '__gt__', '__hash__', '__init__','__le__', '__len__',
+'__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__','__repr__', '__rmod__',
+'__rmul__', '__setattr__', '__str__', 'capitalize', 'center', 'count', 'decode', 'encode', 'endswith',
+'expandtabs', 'find', 'index', 'isalnum', 'isalpha', 'isdigit', 'islower', 'isspace', 'istitle',
+'isupper', 'join', 'ljust', 'lower', 'lstrip', 'replace', 'rfind','rindex', 'rjust', 'rsplit', 'rstrip',
+'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+
+&gt;&gt;&gt; help(s.find)
+</pre></div></div>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+Help on built-in function find:
+
+find(...)
+    S.find(sub [,start [,end]]) -&gt; int
+
+    Return the lowest index in S where substring sub is found,
+    such that sub is contained within s[start,end].  Optional
+    arguments start and end are interpreted as in slice notation.
+
+    Return -1 on failure.
+</pre></div></div>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt; s.find('b')
+1
+</pre></div></div>
+<p>Try out some of the string functions listed in <tt>dir</tt> (ignore those with underscores &rsquo;_&rsquo; around the method name).</p>
+<h4>Built-in Data Structures</h4>
+<p>Python comes equipped with some useful built-in data structures, broadly similar to Java's collections package.</p>
+<h5>Lists</h5>
+<p>Lists store a sequence of mutable items:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; fruits = ['apple','orange','pear','banana']
+&gt;&gt;&gt; fruits[0]
+'apple'
+</pre></div></div>
+<p>We can use the <tt>+</tt> operator to do list concatenation:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; otherFruits = ['kiwi','strawberry']
+&gt;&gt;&gt; fruits + otherFruits
+['apple', 'orange', 'pear', 'banana', 'kiwi', 'strawberry']
+</pre></div></div>
+<p>Python also allows negative-indexing from the back of the list. For instance, <tt>fruits[-1]</tt> will access the last element <tt>'banana'</tt>:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; fruits[-2]
+'pear'
+&gt;&gt;&gt; fruits.pop()
+'banana'
+&gt;&gt;&gt; fruits
+['apple', 'orange', 'pear']
+&gt;&gt;&gt; fruits.append('grapefruit')
+&gt;&gt;&gt; fruits
+['apple', 'orange', 'pear', 'grapefruit']
+&gt;&gt;&gt; fruits[-1] = 'pineapple'
+&gt;&gt;&gt; fruits
+['apple', 'orange', 'pear', 'pineapple']
+</pre></div></div>
+<p>We can also index multiple adjacent elements using the slice operator. For instance, <tt>fruits[1:3]</tt>, returns a list containing the elements at position 1 and 2. In general <tt>fruits[start:stop]</tt> will get the elements in start, <tt>start+1, ..., stop-1</tt>. We can also do <tt>fruits[start:]</tt> which returns all elements starting from the <tt>start</tt> index. Also <tt>fruits[:end]</tt> will return all elements before the element at position end:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; fruits[0:2]
+['apple', 'orange']
+&gt;&gt;&gt; fruits[:3]
+['apple', 'orange', 'pear']
+&gt;&gt;&gt; fruits[2:]
+['pear', 'pineapple']
+&gt;&gt;&gt; len(fruits)
+4
+</pre></div></div>
+<p>The items stored in lists can be any Python data type. So for instance we can have lists of lists:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; lstOfLsts = [['a','b','c'],[1,2,3],['one','two','three']]
+&gt;&gt;&gt; lstOfLsts[\1][2]
+3
+&gt;&gt;&gt; lstOfLsts[0].pop()
+'c'
+&gt;&gt;&gt; lstOfLsts
+[['a', 'b'],[1, 2, 3],['one', 'two', 'three']]
+</pre></div></div>
+<h4>Exercise: Lists</h4>
+<p>Play with some of the list functions. You can find the methods you can call on an object via the <tt>dir</tt> and get information about them via the <tt>help</tt> command:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; dir(list)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__',
+'__delslice__', '__doc__', '__eq__', '__ge__', '__getattribute__',
+'__getitem__', '__getslice__', '__gt__', '__hash__', '__iadd__', '__imul__',
+'__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__',
+'__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__',
+'__rmul__', '__setattr__', '__setitem__', '__setslice__', '__str__',
+'append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse',
+'sort']
+
+&gt;&gt;&gt; help(list.reverse)
+Help on built-in function reverse:
+
+reverse(...)
+    L.reverse() -- reverse *IN PLACE*
+&gt;&gt;&gt; lst = ['a','b','c']
+&gt;&gt;&gt; lst.reverse()
+&gt;&gt;&gt; lst
+['c','b','a']
+</pre></div></div>
+<p>Note: Ignore functions with underscores &ldquo;_&rdquo; around the names; these are private helper methods. Press 'q&rsquo; to back out of a help screen.</p>
+<h5>Tuples</h5>
+<p>A data structure similar to the list is the tuple, which is like a list except that it is immutable once it is created (i.e. you cannot change its content once created). Note that tuples are surrounded with parentheses while lists have square brackets.</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; pair = (3,5)
+&gt;&gt;&gt; pair[0]
+3
+&gt;&gt;&gt; x,y = pair
+&gt;&gt;&gt; x
+3
+&gt;&gt;&gt; y
+5
+&gt;&gt;&gt; pair[1] = 6
+TypeError: object does not support item assignment
+</pre></div></div>
+<p>The attempt to modify an immutable structure raised an exception. Exceptions indicate errors: index out of bounds errors, type errors, and so on will all report exceptions in this way.</p>
+<h5>Sets</h5>
+<p>A set is another data structure that serves as an unordered list with no duplicate items. Below, we show how to create a set, add things to the set, test if an item is in the set, and perform common set operations (difference, intersection, union):</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; shapes = ['circle','square','triangle','circle']
+&gt;&gt;&gt; setOfShapes = set(shapes)
+&gt;&gt;&gt; setOfShapes
+set(['circle','square','triangle'])
+&gt;&gt;&gt; setOfShapes.add('polygon')
+&gt;&gt;&gt; setOfShapes
+set(['circle','square','triangle','polygon'])
+&gt;&gt;&gt; 'circle' in setOfShapes
+True
+&gt;&gt;&gt; 'rhombus' in setOfShapes
+False
+&gt;&gt;&gt; favoriteShapes = ['circle','triangle','hexagon']
+&gt;&gt;&gt; setOfFavoriteShapes = set(favoriteShapes)
+&gt;&gt;&gt; setOfShapes - setOfFavoriteShapes
+set(['square','polyon'])
+&gt;&gt;&gt; setOfShapes &amp; setOfFavoriteShapes
+set(['circle','triangle'])
+&gt;&gt;&gt; setOfShapes | setOfFavoriteShapes
+set(['circle','square','triangle','polygon','hexagon'])
+</pre></div></div>
+<p><b>Note that the objects in the set are unordered; you cannot assume that their traversal or print order will be the same across machines!</b></p>
+<h5>Dictionaries</h5>
+<p>The last built-in data structure is the dictionary which stores a map from one type of object (the key) to another (the value). The key must be an immutable type (string, number, or tuple). The value can be any Python data type.</p>
+<p>Note: In the example below, the printed order of the keys returned by Python could be different than shown below. The reason is that unlike lists which have a fixed ordering, a dictionary is simply a hash table for which there is no fixed ordering of the keys (like HashMaps in Java). The order of the keys depends on how exactly the hashing algorithm maps keys to buckets, and will usually seem arbitrary. Your code should not rely on key ordering, and you should not be surprised if even a small modification to how your code uses a dictionary results in a new key ordering.</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; studentIds = {'knuth': 42.0, 'turing': 56.0, 'nash': 92.0 }
+&gt;&gt;&gt; studentIds['turing']
+56.0
+&gt;&gt;&gt; studentIds['nash'] = 'ninety-two'
+&gt;&gt;&gt; studentIds
+{'knuth': 42.0, 'turing': 56.0, 'nash': 'ninety-two'}
+&gt;&gt;&gt; del studentIds['knuth']
+&gt;&gt;&gt; studentIds
+{'turing': 56.0, 'nash': 'ninety-two'}
+&gt;&gt;&gt; studentIds['knuth'] = [42.0,'forty-two']
+&gt;&gt;&gt; studentIds
+{'knuth': [42.0, 'forty-two'], 'turing': 56.0, 'nash': 'ninety-two'}
+&gt;&gt;&gt; studentIds.keys()
+['knuth', 'turing', 'nash']
+&gt;&gt;&gt; studentIds.values()
+[[42.0, 'forty-two'], 56.0, 'ninety-two']
+&gt;&gt;&gt; studentIds.items()
+[('knuth',[42.0, 'forty-two']), ('turing',56.0), ('nash','ninety-two')]
+&gt;&gt;&gt; len(studentIds)
+3
+</pre></div></div>
+<p>As with nested lists, you can also create dictionaries of dictionaries.</p>
+<h4>Exercise: Dictionaries</h4>
+<p>Use <tt>dir</tt> and <tt>help</tt> to learn about the functions you can call on dictionaries.</p>
+<h4>Writing Scripts</h4>
+<p>Now that you've got a handle on using Python interactively, let's write a simple Python script that demonstrates Python's <tt>for</tt> loop. Open the file called <tt>foreach.py</tt> and update it with the following code:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+# This is what a comment looks like
+fruits = ['apples','oranges','pears','bananas']
+for fruit in fruits:
+    print fruit + ' for sale'
+
+fruitPrices = {'apples': 2.00, 'oranges': 1.50, 'pears': 1.75}
+for fruit, price in fruitPrices.items():
+    if price &lt; 2.00:
+        print '%s cost %f a pound' % (fruit, price)
+    else:
+        print fruit + ' are too expensive!'
+</pre></div></div>
+<p>At the command line, use the following command in the directory containing foreach.py:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~/tutorial]$ python foreach.py
+apples for sale
+oranges for sale
+pears for sale
+bananas for sale
+oranges cost 1.500000 a pound
+pears cost 1.750000 a pound
+apples are too expensive!
+</pre></div></div>
+<p>Remember that the print statements listing the costs may be in a different order on your screen than in this tutorial; that's due to the fact that we're looping over dictionary keys, which are unordered. To learn more about control structures (e.g., <tt>if</tt> and <tt>else</tt>) in Python, check out the official <a href="http://docs.python.org/tut/">Python tutorial section on this topic</a>.</p>
+<p>If you like functional programming you might also like <tt>map</tt> and <tt>filter</tt>:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; map(lambda x: x * x, [1,2,3])
+[1, 4, 9]
+&gt;&gt;&gt; filter(lambda x: x &gt; 3, [1,2,3,4,5,4,3,2,1])
+[4, 5, 4]\
+</pre></div></div>
+<p>You can <a href="http://www.secnetix.de/olli/Python/lambda_functions.hawk">learn more</a> about <tt>lambda</tt> if you're interested.</p>
+<p>The next snippet of code demonstrates Python's list comprehension construction:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+nums = [1,2,3,4,5,6]
+plusOneNums = [x+1 for x in nums]
+oddNums = [x for x in nums if x % 2 == 1]
+print oddNums
+oddNumsPlusOne = [x+1 for x in nums if x % 2 ==1]
+print oddNumsPlusOne
+</pre></div></div>
+<p>This code is in a file called <tt>listcomp.py</tt>, which you can run:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~]$ python listcomp.py
+[1,3,5]
+[2,4,6]
+</pre></div></div>
+<h4>Exercise: List Comprehensions</h4>
+<p>Write a list comprehension which, from a list, generates a lowercased version of each string that has length greater than five. You can find the solution in <tt>listcomp2.py</tt>.</p>
+<h4>Beware of Indentation!</h4>
+<p>Unlike many other languages, Python uses the indentation in the source code for interpretation. So for instance, for the following script:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+if 0 == 1:
+    print 'We are in a world of arithmetic pain'
+print 'Thank you for playing'
+</pre></div></div>
+<p>will output</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+Thank you for playing
+</pre></div></div>
+<p>But if we had written the script as</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+if 0 == 1:
+    print 'We are in a world of arithmetic pain'
+    print 'Thank you for playing'
+</pre></div></div>
+<p>there would be no output. The moral of the story: be careful how you indent! It's best to use four spaces for indentation &ndash; that's what the course code uses.</p>
+<h4>Tabs vs Spaces</h4>
+<p>Because Python uses indentation for code evaluation, it needs to keep track of the level of indentation across code blocks. This means that if your Python file switches from using tabs as indentation to spaces as indentation, the Python interpreter will not be able to resolve the ambiguity of the indentation level and throw an exception. Even though the code can be lined up visually in your text editor, Python &ldquo;sees&rdquo; a change in indentation and most likely will throw an exception (or rarely, produce unexpected behavior).</p>
+<p>This most commonly happens when opening up a Python file that uses an indentation scheme that is opposite from what your text editor uses (aka, your text editor uses spaces and the file uses tabs). When you write new lines in a code block, there will be a mix of tabs and spaces, even though the whitespace is aligned. For a longer discussion on tabs vs spaces, see <a href="http://stackoverflow.com/questions/119562/tabs-versus-spaces-in-python-programming">this</a> discussion on StackOverflow.</p>
+<h4>Writing Functions</h4>
+<p>As in Java, in Python you can define your own functions:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+fruitPrices = {'apples':2.00, 'oranges': 1.50, 'pears': 1.75}
+
+def buyFruit(fruit, numPounds):
+    if fruit not in fruitPrices:
+        print "Sorry we don't have %s" % (fruit)
+    else:
+        cost = fruitPrices[fruit] * numPounds
+        print "That'll be %f please" % (cost)
+
+# Main Function
+if __name__ == '__main__':
+    buyFruit('apples',2.4)
+    buyFruit('coconuts',2)
+</pre></div></div>
+<p>Rather than having a main function as in Java, the <tt>__name__ == '__main__'</tt> check is used to delimit expressions which are executed when the file is called as a script from the command line. The code after the main check is thus the same sort of code you would put in a <tt>main</tt> function in Java.</p>
+<p>Save this script as fruit.py and run it:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~]$ python fruit.py
+That'll be 4.800000 please
+Sorry we don't have coconuts
+</pre></div></div>
+<h4>Advanced Exercise</h4>
+<p>Write a <tt>quickSort</tt> function in Python using list comprehensions. Use the first element as the pivot. You can find the solution in <tt>quickSort.py</tt>.</p>
+<h4>Object Basics</h4>
+<p>Although this isn't a class in object-oriented programming, you'll have to use some objects in the programming projects, and so it's worth covering the basics of objects in Python. An object encapsulates data and provides functions for interacting with that data.</p>
+<h4>Defining Classes</h4>
+<p>Here's an example of defining a class named <tt>FruitShop</tt>:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+class FruitShop:
+
+    def __init__(self, name, fruitPrices):
+        """
+            name: Name of the fruit shop
+
+            fruitPrices: Dictionary with keys as fruit
+            strings and prices for values e.g.
+            {'apples':2.00, 'oranges': 1.50, 'pears': 1.75}
+        """
+        self.fruitPrices = fruitPrices
+        self.name = name
+        print 'Welcome to the %s fruit shop' % (name)
+
+    def getCostPerPound(self, fruit):
+        """
+            fruit: Fruit string
+        Returns cost of 'fruit', assuming 'fruit'
+        is in our inventory or None otherwise
+        """
+        if fruit not in self.fruitPrices:
+            print "Sorry we don't have %s" % (fruit)
+            return None
+        return self.fruitPrices[fruit]
+
+    def getPriceOfOrder(self, orderList):
+        """
+            orderList: List of (fruit, numPounds) tuples
+
+        Returns cost of orderList. If any of the fruit are
+        """
+        totalCost = 0.0
+        for fruit, numPounds in orderList:
+            costPerPound = self.getCostPerPound(fruit)
+            if costPerPound != None:
+                totalCost += numPounds * costPerPound
+        return totalCost
+
+    def getName(self):
+        return self.name
+</pre></div></div>
+<p>The <tt>FruitShop</tt> class has some data, the name of the shop and the prices per pound of some fruit, and it provides functions, or methods, on this data. What advantage is there to wrapping this data in a class?</p>
+<ol>
+<li><p>Encapsulating the data prevents it from being altered or used inappropriately,</p>
+</li>
+<li><p>The abstraction that objects provide make it easier to write general-purpose code.</p>
+</li>
+</ol>
+<h4>Using Objects</h4>
+<p>So how do we make an object and use it? Make sure you have the <tt>FruitShop</tt> implementation in <tt>shop.py</tt>. We then import the code from this file (making it accessible to other scripts) using <tt>import shop</tt>, since <tt>shop.py</tt> is the name of the file. Then, we can create <tt>FruitShop</tt> objects as follows:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+import shop
+
+shopName = 'the Berkeley Bowl'
+fruitPrices = {'apples': 1.00, 'oranges': 1.50, 'pears': 1.75}
+berkeleyShop = shop.FruitShop(shopName, fruitPrices)
+applePrice = berkeleyShop.getCostPerPound('apples')
+print applePrice
+print('Apples cost $%.2f at %s.' % (applePrice, shopName))
+
+otherName = 'the Stanford Mall'
+otherFruitPrices = {'kiwis':6.00, 'apples': 4.50, 'peaches': 8.75}
+otherFruitShop = shop.FruitShop(otherName, otherFruitPrices)
+otherPrice = otherFruitShop.getCostPerPound('apples')
+print otherPrice
+print('Apples cost $%.2f at %s.' % (otherPrice, otherName))
+print("My, that's expensive!")
+</pre></div></div>
+<p>This code is in <tt>shopTest.py</tt>; you can run it like this:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~]$ python shopTest.py
+Welcome to the Berkeley Bowl fruit shop
+1.0
+Apples cost $1.00 at the Berkeley Bowl.
+Welcome to the Stanford Mall fruit shop
+4.5
+Apples cost $4.50 at the Stanford Mall.
+My, that's expensive!
+</pre></div></div>
+<p>So what just happened? The <tt>import shop</tt> statement told Python to load all of the functions and classes in <tt>shop.py</tt>. The line <tt>berkeleyShop = shop.FruitShop(shopName, fruitPrices)</tt> constructs an instance of the FruitShop class defined in shop.py, by calling the <tt>__init__</tt> function in that class. Note that we only passed two arguments in, while <tt>__init__</tt> seems to take three arguments: <tt>(self, name, fruitPrices)</tt>. The reason for this is that all methods in a class have <tt>self</tt> as the first argument. The <tt>self</tt> variable's value is automatically set to the object itself; when calling a method, you only supply the remaining arguments. The <tt>self</tt> variable contains all the data (<tt>name</tt> and <tt>fruitPrices</tt>) for the current specific instance (similar to this in Java). The print statements use the substitution operator (described in the [https:<i></i>docs.python.org<i>2</i>library/stdtypes.html</p>
+<h4>Static vs Instance Variables</h4>
+<p>The following example illustrates how to use static and instance variables in Python.</p>
+<p>Create the <tt>person_class.py</tt> containing the following code:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+class Person:
+    population = 0
+    def __init__(self, myAge):
+        self.age = myAge
+        Person.population += 1
+    def get_population(self):
+        return Person.population
+    def get_age(self):
+        return self.age
+</pre></div></div>
+<p>We first compile the script:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~]$ python person_class.py
+</pre></div></div>
+<p>Now use the class as follows:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; import person_class
+&gt;&gt;&gt; p1 = person_class.Person(12)
+&gt;&gt;&gt; p1.get_population()
+1
+&gt;&gt;&gt; p2 = person_class.Person(63)
+&gt;&gt;&gt; p1.get_population()
+2
+&gt;&gt;&gt; p2.get_population()
+2
+&gt;&gt;&gt; p1.get_age()
+12
+&gt;&gt;&gt; p2.get_age()
+63
+</pre></div></div>
+<p>In the code above, <tt>age</tt> is an instance variable and <tt>population</tt> is a static variable. population is shared by all instances of the <tt>Person</tt> class whereas each instance has its own <tt>age</tt> variable.</p>
+<h4>More Python Tips and Tricks</h4>
+<p>This tutorial has briefly touched on some major aspects of Python that will be relevant to the course. Here are some more useful tidbits:</p>
+<ul>
+<li><p>Use <tt>range</tt> to generate a sequence of integers, useful for generating traditional indexed <tt>for</tt> loops:</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+for index in range(3):
+    print lst[index]
+</pre></div></div>
+<ul>
+<li><p>After importing a file, if you edit a source file, the changes will not be immediately propagated in the interpreter. For this, use the reload command: </p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt;&gt; reload(shop)
+</pre></div></div>
+<h5>Troubleshooting</h5>
+<p>These are some problems (and their solutions) that new Python learners commonly encounter.</p>
+<ul>
+<li><p><b>Problem:</b>
+ImportError: No module named py<br /><b>Solution</b>:
+When using <tt>import</tt>, do not include the &ldquo;.py&rdquo; from the filename. 
+For example, you should say: <tt>import shop</tt> 
+NOT: <tt>import shop.py</tt></p>
+</li>
+</ul>
+<ul>
+<li><p><b>Problem:</b>
+NameError: name 'MY VARIABLE&rsquo; is not defined
+Even after importing you may see this.<br /><b>Solution:</b>
+To access a member of a module, you have to type <tt>MODULE NAME.MEMBER NAME,</tt> where <tt>MODULE NAME</tt> is the name of the .py file, and MEMBER NAME is the name of the variable (or function) you are trying to access.</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Problem:</b>
+TypeError: 'dict&rsquo; object is not callable<br />Solution:
+Dictionary looks up are done using square brackets: <a href="">and</a>. NOT parenthesis: ( and ).</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Problem:</b>
+ValueError: too many values to unpack<br /><b>Solution:</b>
+Make sure the number of variables you are assigning in a <tt>for</tt> loop matches the number of elements in each item of the list. Similarly for working with tuples.<br />For example, if <tt>pair</tt> is a tuple of two elements (e.g. <tt>pair =('apple', 2.0))</tt> then the following code would cause the &ldquo;too many values to unpack error&rdquo;:</p>
+</li>
+</ul>
+<p><tt>(a,b,c) = pair</tt></p>
+<p>Here is a problematic scenario involving a for loop:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+pairList = [('apples', 2.00), ('oranges', 1.50), ('pears', 1.75)]
+for fruit, price, color in pairList:
+    print '%s fruit costs %f and is the color %s' % (fruit, price, color)
+</pre></div></div>
+<ul>
+<li><p><b>Problem:</b>
+AttributeError: 'list&rsquo; object has no attribute 'length&rsquo; (or something similar)<br /><b>Solution:</b>
+Finding length of lists is done using <tt>len(NAME OF LIST)</tt>.</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Problem:</b>
+Changes to a file are not taking effect.<br /><b>Solution:</b> Make sure you are saving all your files after any changes.<br />If you are editing a file in a window different from the one you are using to execute python, make sure you <tt>reload(YOUR_MODULE)</tt> to guarantee your changes are being reflected. <tt>reload</tt> works similarly to <tt>import</tt>.</p>
+</li>
+</ul>
+<h4>More References</h4>
+<ul>
+<li><p>The place to go for more Python information: <a href="http://www.python.org/">www.python.org</a></p>
+</li>
+<li><p>A good reference book: <a href="http://oreilly.com/catalog/9780596513986/">Learning Python</a> </p>
+</li>
+<li><p>More references are listed in the course syllabus.</p>
+</li>
+</ul>
+<h3>Autograder</h3>
+<p>To get you familiarized with the autograder, we will ask you to code, test, and submit solutions for three questions.
+You can download all of the files associated the autograder tutorial as a zip archive: <a href="tutorial.zip">tutorial.zip</a> (note this is <i>different</i> from the zip file used in the UNIX and Python mini-tutorials, <a href="python_basics.zip">python_basics.zip</a>). Unzip this file and examine its contents:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~]$ unzip [tutorial.zip tutorial.zip]
+[ajit@ajitsmbp ~]$ cd tutorial
+[ajit@ajitsmbp ~/tutorial]$ ls
+addition.py
+autograder.py
+buyLotsOfFruit.py
+grading.py
+projectParams.py
+shop.py
+shopSmart.py
+testClasses.py
+testParser.py
+test_cases
+tutorialTestClasses.py
+</pre></div></div>
+<p>This contains a number of files you'll edit or run:</p>
+<ul>
+<li><p><tt>addition.py</tt>: source file for question 1</p>
+</li>
+<li><p><tt>buyLotsOfFruit.py</tt>: source file for question 2</p>
+</li>
+<li><p><tt>shop.py</tt>: source file for question 3</p>
+</li>
+<li><p><tt>shopSmart.py</tt>: source file for question 3</p>
+</li>
+<li><p><tt>autograder.py</tt>: autograding script (see below)</p>
+</li>
+</ul>
+<p>and others you can ignore:</p>
+<ul>
+<li><p><tt>test_cases</tt>: directory contains the test cases for each question</p>
+</li>
+<li><p><tt>grading.py</tt>: autograder code</p>
+</li>
+<li><p><tt>testClasses.py</tt>: autograder code</p>
+</li>
+<li><p><tt>tutorialTestClasses.py</tt>: test classes for this particular project</p>
+</li>
+<li><p><tt>projectParams.py</tt>: project parameters</p>
+</li>
+</ul>
+<p>The command python <tt>autograder.py</tt> grades your solution to all three problems. If we run it before editing any files we get a page or two of output:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~/tutorial]$ python autograder.py
+Starting on 1-21 at 23:39:51
+
+Question q1
+===========
+*** FAIL: test_cases/q1/addition1.test
+*** 	add(a,b) must return the sum of a and b
+*** 	student result: "0"
+*** 	correct result: "2"
+*** FAIL: test_cases/q1/addition2.test
+*** 	add(a,b) must return the sum of a and b
+*** 	student result: "0"
+*** 	correct result: "5"
+*** FAIL: test_cases/q1/addition3.test
+*** 	add(a,b) must return the sum of a and b
+*** 	student result: "0"
+*** 	correct result: "7.9"
+*** Tests failed.
+
+### Question q1: 0/1 ###
+
+
+Question q2
+===========
+*** FAIL: test_cases/q2/food_price1.test
+*** 	buyLotsOfFruit must compute the correct cost of the order
+*** 	student result: "0.0"
+*** 	correct result: "12.25"
+*** FAIL: test_cases/q2/food_price2.test
+*** 	buyLotsOfFruit must compute the correct cost of the order
+*** 	student result: "0.0"
+*** 	correct result: "14.75"
+*** FAIL: test_cases/q2/food_price3.test
+*** 	buyLotsOfFruit must compute the correct cost of the order
+*** 	student result: "0.0"
+*** 	correct result: "6.4375"
+*** Tests failed.
+
+### Question q2: 0/1 ###
+
+
+Question q3
+===========
+Welcome to shop1 fruit shop
+Welcome to shop2 fruit shop
+*** FAIL: test_cases/q3/select_shop1.test
+*** 	shopSmart(order, shops) must select the cheapest shop
+*** 	student result: "None"
+*** 	correct result: "&lt;FruitShop: shop1&gt;"
+Welcome to shop1 fruit shop
+Welcome to shop2 fruit shop
+*** FAIL: test_cases/q3/select_shop2.test
+*** 	shopSmart(order, shops) must select the cheapest shop
+*** 	student result: "None"
+*** 	correct result: "&lt;FruitShop: shop2&gt;"
+Welcome to shop1 fruit shop
+Welcome to shop2 fruit shop
+Welcome to shop3 fruit shop
+*** FAIL: test_cases/q3/select_shop3.test
+*** 	shopSmart(order, shops) must select the cheapest shop
+*** 	student result: "None"
+*** 	correct result: "&lt;FruitShop: shop3&gt;"
+*** Tests failed.
+
+### Question q3: 0/1 ###
+
+
+Finished at 23:39:51
+
+Provisional grades
+==================
+Question q1: 0/1
+Question q2: 0/1
+Question q3: 0/1
+------------------
+Total: 0/3
+
+Your grades are NOT yet registered.  To register your grades, make sure
+to follow your instructor's guidelines to receive credit on your project.
+</pre></div></div>
+<p>For each of the three questions, this shows the results of that question's tests, the questions grade, and a final summary at the end. Because you haven't yet solved the questions, all the tests fail. As you solve each question you may find some tests pass while other fail. When all tests pass for a question, you get full marks.</p>
+<p>Looking at the results for question 1, you can see that it has failed three tests with the error message &ldquo;add(a,b) must return the sum of a and b&rdquo;. The answer your code gives is always 0, but the correct answer is different. We'll fix that in the next tab.</p>
+<h2>Question 1: Addition</h2>
+<p>Open <tt>addition.py</tt> and look at the definition of <tt>add</tt>:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+    def add(a, b):
+        "Return the sum of a and b"
+        "*** YOUR CODE HERE ***"
+        return 0
+</pre></div></div>
+<p>The tests called this with <tt>a</tt> and <tt>b</tt> set to different values, but the code always returned zero. Modify this definition to read:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+    def add(a, b):
+        "Return the sum of a and b"
+        print "Passed a=%s and b=%s, returning a+b=%s" % (a,b,a+b)
+        return a+b
+</pre></div></div>
+<p>Now rerun the autograder (omitting the results for questions 2 and 3):</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~/tutorial]$ python autograder.py -q q1
+Starting on 1-21 at 23:52:05
+
+Question q1
+===========
+Passed a=1 and b=1, returning a+b=2
+*** PASS: test_cases/q1/addition1.test
+*** 	add(a,b) returns the sum of a and b
+Passed a=2 and b=3, returning a+b=5
+*** PASS: test_cases/q1/addition2.test
+*** 	add(a,b) returns the sum of a and b
+Passed a=10 and b=-2.1, returning a+b=7.9
+*** PASS: test_cases/q1/addition3.test
+*** 	add(a,b) returns the sum of a and b
+
+### Question q1: 1/1 ###
+
+Finished at 23:41:01
+
+Provisional grades
+==================
+Question q1: 1/1
+Question q2: 0/1
+Question q3: 0/1
+------------------
+Total: 1/3
+</pre></div></div>
+<p>You now pass all tests, getting full marks for question 1. Notice the new lines &ldquo;Passed a=&hellip;&rdquo; which appear before &ldquo;<b></b>* PASS: &hellip;&rdquo;. These are produced by the print statement in <tt>add</tt>. You can use print statements like that to output information useful for debugging. You can also run the autograder with the option <tt>--mute</tt> to temporarily hide such lines, as follows:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[ajit@ajitsmbp ~/tutorial]$ python autograder.py -q q1 --mute
+Starting on 1-22 at 14:15:33
+
+Question q1
+===========
+*** PASS: test_cases/q1/addition1.test
+*** 	add(a,b) returns the sum of a and b
+*** PASS: test_cases/q1/addition2.test
+*** 	add(a,b) returns the sum of a and b
+*** PASS: test_cases/q1/addition3.test
+*** 	add(a,b) returns the sum of a and b
+
+### Question q1: 1/1 ###
+</pre></div></div>
+<h2>Question 2: buyLotsOfFruit function</h2>
+<p>Add a <tt>buyLotsOfFruit(orderList)</tt> function to <tt>buyLotsOfFruit.py</tt> which takes a list of <tt>(fruit,pound)</tt> tuples and returns the cost of your list. If there is some fruit in the list which doesn't appear in <tt>fruitPrices</tt> it should print an error message and return <tt>None</tt>. Please do not change the <tt>fruitPrices</tt> variable.</p>
+<p>Run python autograder.py until question 2 passes all tests and you get full marks. Each test will confirm that buyLotsOfFruit(orderList) returns the correct answer given various possible inputs. For example, test_cases<i>q2</i>food_price1.test tests whether:</p>
+<p>Cost of [('apples&rsquo;, 2.0), ('pears&rsquo;, 3.0), ('limes&rsquo;, 4.0)] is 12.25</p>
+<h2>Question 3: shopSmart function</h2>
+<p>Fill in the function <tt>shopSmart(orders,shops)</tt> in <tt>shopSmart.py</tt>, which takes an orderList (like the kind passed in to <tt>FruitShop.getPriceOfOrder)</tt> and a list of <tt>FruitShop</tt> and returns the <tt>FruitShop</tt> where your order costs the least amount in total. Don't change the file name or variable names, please. Note that we will provide the <tt>shop.py</tt> implementation as a &ldquo;support&rdquo; file, so you don't need to submit yours.</p>
+<p>Run <tt>python autograder.py</tt> until question 3 passes all tests and you get full marks. Each test will confirm that <tt>shopSmart(orders,shops)</tt> returns the correct answer given various possible inputs. For example, with the following variable definitions:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+orders1 = [('apples',1.0), ('oranges',3.0)]
+orders2 = [('apples',3.0)]
+dir1 = {'apples': 2.0, 'oranges':1.0}
+shop1 =  shop.FruitShop('shop1',dir1)
+dir2 = {'apples': 1.0, 'oranges': 5.0}
+shop2 = shop.FruitShop('shop2',dir2)
+shops = [shop1, shop2]
+</pre></div></div>
+<p><tt>test_cases\/q3\/select_shop1.test</tt> tests whether:</p>
+<p><tt>shopSmart.shopSmart(orders1, shops) == shop1</tt></p>
+<p>and <tt>test_cases\/q3\/select_shop2.test</tt> tests whether:</p>
+<p><tt>shopSmart.shopSmart(orders2, shops) == shop2</tt></p>
+<h2>Submission</h2>
+<p>You're not done yet! Follow the submission instructions on Canvas to receive credit on your project!</p>
+<p><br /><br /><i>Note: this page is a modified version of the Berkeley CS188 Pacman homework assignments. We have tailored it for Virginia Tech's ECE4524. If you are looking for the original version, which the team at Berkeley do a great job keeping up to date, see <a href="http://ai.berkeley.edu/project_overview.html">http://ai.berkeley.edu/project_overview.html</a></i></p>
+<div id="footer">
+<div id="footer-text">
+Page updated 2022-01-23.
+</div>
+</div>
+</div>
+</body>
+</html>
