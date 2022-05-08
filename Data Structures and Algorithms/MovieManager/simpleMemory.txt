@@ -1,0 +1,18 @@
+print blocks  
+add 12 angry men
+add Spiderman
+
+add despicable me
+
+print blocks
+add short
+delete 12 angry men
+
+       update  add Spiderman<SEP>Genre<SEP>movie
+
+print blocks
+
+update delete Spiderman<SEP>movie
+update delete Spiderman<SEP>Genre
+
+print blocks

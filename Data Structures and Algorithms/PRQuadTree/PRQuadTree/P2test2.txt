@@ -1,0 +1,14 @@
+insert p_p          1 20
+	insert p        10 30
+	insert p_42   1 20
+	insert far_point  200 200
+dump
+
+duplicates
+
+search p_p
+regionsearch   0 0 25 25
+remove p_p
+remove 10 30
+duplicates
+dump
