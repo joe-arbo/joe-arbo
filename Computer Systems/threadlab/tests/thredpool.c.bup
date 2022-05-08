@@ -1,0 +1,228 @@
+/**
+ * threadpool.h
+ *
+ * A work-stealing, fork-join thread pool.
+ */
+/*
+get global queue working first
+don't have to test all at once, can just do, say, threadpool_test after `make`
+if set up, can at least do partial testing
+should be able to test at that point, then implement work stealing
+*/
+/*
+NOTE: bernard suggested setting all signals to be broadcasts, but i don't think they're supposed to stay that way...
+either way, we pass tests for the first.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <threads.h>
+#include <semaphore.h>
+#include "threadpool.h"
+#include "list.h"
+
+static void* worker_thread(void * poolIn);
+static struct future* find_from_global(struct thread_pool* pool);
+static struct future* try_steal(void);
+
+static pthread_cond_t condvar = PTHREAD_COND_INITIALIZER; //<-- put in pool
+
+/*
+* 0 = external thread (for global queue)
+* otherwise internal and == to thread id(for local queue)
+* init'd as 0 in thread_pool_new
+*/
+static thread_local pthread_t int_ext; //TODO: init per thread
+
+/*
+* Enum to represent a future's possible states.
+*/
+enum state{ //static created warning
+    NEW,
+    IN_PROGRESS,
+    DONE
+};
+
+/*
+* Struct to bundle thread id with a "local" queue.
+*/
+struct worker{ //static created warning
+    pthread_t thread; //thread id associated with worker
+    struct list local_queue; //"local" queue for each worker
+    struct list_elem elem;
+    //<-- add lock field here
+};
+
+/* 
+ * Contains array of thread ids and global
+ * queue of tasks.
+ */
+struct thread_pool{
+    pthread_mutex_t lock;
+    bool shutdown;
+    int numthreads;
+    struct list workers; //array of thread ids and local_queues bundled
+    struct list global_queue; //global queue of tasks (futures)
+}; 
+
+/*
+* Contains pointer to function to be called, any data passed
+* to the function, result (when available), state
+*/
+struct future{
+    fork_join_task_t task; //the actual task
+    enum state state; //state of future: should be "NEW" as default
+    struct list_elem elem; //because it will be a part of a list
+    void * data; //data to pass to task
+    void * result; //result of completed task
+    sem_t result_done;
+};
+
+/* Create a new thread pool with no more than n threads. */
+struct thread_pool * thread_pool_new(int nthreads){
+    int_ext = 0; //general case: jobs coming from external threads
+    struct thread_pool* pool = malloc(sizeof (struct thread_pool));
+    pool->numthreads = nthreads;
+    pool->shutdown = false;
+    pthread_mutex_init(&pool->lock, NULL);
+    pthread_mutex_lock(&pool->lock);
+    list_init(&pool->global_queue);
+    list_init(&pool->workers);
+    for (int i = 0; i < nthreads; ++i)
+    {
+        struct worker *worker_t;
+        worker_t = malloc(sizeof(struct worker));
+        list_push_front(&pool->workers, &worker_t->elem);
+        list_init(&worker_t->local_queue);
+        pthread_create(&worker_t->thread, NULL, &worker_thread, pool); //can pass in theadpool to have it effectively global
+    }
+
+    //we might need more here
+    pthread_mutex_unlock(&pool->lock);
+
+    return pool;
+
+    //test commit comment
+}
+
+/*
+* Logic for worker threads, including getting tasks from global or stealing,
+* and then doing the function.
+* Recieves a pointer to the threadpool to make it effectively "global"
+*/
+static void * worker_thread(void * poolIn){
+    struct thread_pool * pool = (struct thread_pool *) poolIn;
+    pthread_mutex_lock(&pool->lock); //FLAG
+    int_ext = pthread_self(); //set thread-local var to this thread's id
+	while(!pool->shutdown){
+       struct future * future = NULL;
+       future = find_from_global(pool);
+       if (future){
+           //put the future into the worker's local queue
+           future->state = IN_PROGRESS;
+           future->result = future->task(pool, future->data); //this is running the function
+           sem_post(&future->result_done);
+           future->state = DONE;
+           //pop the future from the local queue
+       }
+       future = try_steal();
+       if (future){
+           //do
+       }
+    pthread_cond_wait(&condvar, &pool->lock); //FLAG
+    }
+    pthread_cond_broadcast(&condvar);
+	pthread_mutex_unlock(&pool->lock); //FLAG
+    return NULL;
+}
+
+/*
+* To be called in worker_thread.
+*/
+static struct future * find_from_global(struct thread_pool* pool){
+    pthread_cond_broadcast(&condvar);
+    while (!list_empty(&pool->global_queue)){
+        struct list_elem* e = list_pop_front(&pool->global_queue);
+        struct future* future = list_entry(e, struct future, elem);
+        return future;
+    }
+    return NULL;
+}
+
+/*
+* To be implemented after find_from_global works
+* To be called in worker_thread.
+*/
+static struct future * try_steal(){
+    //can implement this after getting find_from_global working
+    return NULL;
+}
+
+/* 
+ * Shutdown this thread pool in an orderly fashion.  
+ * Tasks that have been submitted but not executed may or
+ * may not be executed.
+ *
+ * Deallocate the thread pool object before returning. 
+ */
+void thread_pool_shutdown_and_destroy(struct thread_pool * pool){
+    pool->shutdown = true;
+    pthread_cond_broadcast(&condvar);
+
+    //ensure all worker threads exit before freeing the pool
+    struct list_elem *e;
+      for (e = list_begin (&pool->workers); e != list_end (&pool->workers);
+           e = list_next (e))
+        {
+          struct worker *f = list_entry (e, struct worker, elem);
+          pthread_join(f->thread, NULL);
+        }
+
+    free(pool);
+    return;
+}
+
+/* 
+ * Submit a fork join task to the thread pool and return a
+ * future.  The returned future can be used in future_get()
+ * to obtain the result.
+ * 'pool' - the pool to which to submit
+ * 'task' - the task to be submitted.
+ * 'data' - data to be passed to the task's function
+ *
+ * Returns a future representing this computation.
+ */
+struct future * thread_pool_submit(struct thread_pool *pool, fork_join_task_t task, void * data){
+    pthread_mutex_lock(&pool->lock);
+    struct future * future = malloc(sizeof(struct future));
+    future->state = NEW;
+    future->task = task;
+    future->data = data;
+
+    //is this where to do logic for internal/external?
+    list_push_back(&pool->global_queue, &future->elem);
+   
+    pthread_mutex_unlock(&pool->lock);
+    pthread_cond_broadcast(&condvar);//signal that new work has arrived
+    return future;
+}
+
+/* Make sure that the thread pool has completed the execution
+ * of the fork join task this future represents.
+ *
+ * Returns the value returned by this task.
+ */
+void * future_get(struct future * future){
+    pthread_cond_broadcast(&condvar);
+    sem_wait(&future->result_done); //wait for function to return
+    return future->result;
+}
+
+/* Deallocate this future.  Must be called after future_get() */
+//DO NOT USE! We will not call this at all. Will be called outside of this file.
+void future_free(struct future * future){
+    //may need to free additional guts
+    free(future);
+}

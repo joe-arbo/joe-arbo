@@ -1,0 +1,9 @@
+# Result files
+*.json
+
+# Compiled binaries
+mdriver
+mdriver-ts
+
+# Object files
+*.o

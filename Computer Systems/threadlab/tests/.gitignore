@@ -1,0 +1,14 @@
+*.o
+/fj_testdir_*
+/runresult.*.json
+/fib_test
+/mergesort
+/nqueens
+/psum_test
+/quicksort
+/threadpool_test
+/threadpool_test2
+/threadpool_test3
+/threadpool_test4
+/threadpool_test5
+/threadpool_test6

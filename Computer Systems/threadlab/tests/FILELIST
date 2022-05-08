@@ -1,0 +1,21 @@
+# LIST of files to be copied over for testing
+# do not place solution in here!
+fib_test.c
+list.c
+list.h
+Makefile
+mergesort.c
+nqueens.c
+psum_test.c
+quicksort.c
+threadpool.h
+threadpool_lib.c
+threadpool_lib.h
+threadpool_test.c
+threadpool_test2.c
+threadpool_test3.c
+threadpool_test4.c
+threadpool_test5.c
+threadpool_test6.c
+threadpool_test6.py
+sigaltstack.suppression

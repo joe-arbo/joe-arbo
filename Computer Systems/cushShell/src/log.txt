@@ -1,0 +1,30 @@
+<riocross@hemlock src>$ historyhistory
+
+1	history
+<riocross@hemlock src>$ echo hiecho hi
+
+hi
+<riocross@hemlock src>$ lsls
+
+cush		    Makefile	      signal_support.h
+cush.c		    output_spec.py    signal_support.o
+cush.o		    output_spec.pyc   termstate_management.c
+custom_tests.tst    shell-ast.c       termstate_management.h
+gback_glob_test.py  shell-ast.h       termstate_management.o
+hist_test.py	    shell-ast.o       testProgram
+list.c		    shell-grammar.l   testProgram.c
+list.h		    shell-grammar.o   utils.c
+list.o		    shell-grammar.y   utils.h
+log.txt		    signal_support.c  utils.o
+<riocross@hemlock src>$ historyhistory
+
+1	history
+2	echo hi
+3	ls
+4	history
+<riocross@hemlock src>$ [A[A[A[A[Bhistoryls[Kecho hihistoryecho hi
+
+hi
+<riocross@hemlock src>$ exitexit
+
+exit

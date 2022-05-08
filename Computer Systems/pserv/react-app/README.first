@@ -1,0 +1,41 @@
+
+This directory contains an example of an React application that can interact
+with your server.
+
+To use it, you have to add a small feature to your server called HTML5 fallback,
+which is the ability to serve /index.html if it cannot find a file at the path
+specified.
+See https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment
+for more details.
+
+For our server, you have to implement this by making the appropriate
+changes to how you serve static assets if the -a switch is given.
+
+The necessary improvement can be made by substituting /index.html as the fname
+when the call to access() fails instead of returning 404.  However, for paths 
+denoting / or existing directories, you must also serve /index.html, which requires 
+a second check to see whether there is an existing directory (and serve /index.html
+if so).
+
+Once you've made this addition, you can test the app as follows:
+
+(1) ssh into rlogin with
+
+$ ssh -L 10000:localhost:yourport you@rlogin.cs.vt.edu
+
+(2) Add node to your PATH:
+
+$ export PATH=/home/courses/cs3214/software/node-v8.11.1-linux-x64/bin:$PATH
+
+(3) Inside react-app, run 
+
+$ npm run build
+
+(4) and then run your server with
+
+$ ./server -p yourport -a -R ../react-app/build
+
+(5) Place one or more .mp4 files into ../react-app/build
+
+(6) You should now be able to go to the app in http://localhost:10000/
+

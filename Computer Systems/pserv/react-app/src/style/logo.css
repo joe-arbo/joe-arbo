@@ -1,0 +1,17 @@
+.app-logo {
+  animation: app-logo-spin infinite 20s linear;
+  height: 20vmin;
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cs3214-logo {
+  height: 19vmin;
+}

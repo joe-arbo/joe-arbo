@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<!-- minimal demo of expected login functionality -->
+<body>
+    <form onsubmit="return login(this)">
+        Username: <input name="username" >
+        Password: <input name="password" >
+        <input type="submit"/>
+    </form>
+    <div id="result">The result of the request will appear here.</div>
+    <script>
+    const result = document.getElementById('result');
+
+    function login(form) {
+        fetch("/api/login",
+        {
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            method: "POST",
+            body: JSON.stringify({
+                username: form.username.value,
+                password: form.password.value
+            })
+        }).then((res) => { 
+            if (res.status == 200) {
+                res.json().then((data) => {
+                    result.innerText = `Success: token ${JSON.stringify(data)}`;
+                });
+            } else {
+                result.innerText = `Received: ${res.status} ${res.statusText}`;
+            }
+        }).catch((error) => { 
+            result.innerText = `Error: ${error.message}`;
+        });
+
+        return false;   // prevent default action
+    }
+    </script>
+</body>
