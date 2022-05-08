@@ -1,6 +1,6 @@
-### Hi there 👋
+# Hi there 👋, I'm Joseph Arbolino
 
-# Portfolio
+## Portfolio
 A collection of all projects and exercises completed or worked on by Joseph Arbolino
 
 <!--
