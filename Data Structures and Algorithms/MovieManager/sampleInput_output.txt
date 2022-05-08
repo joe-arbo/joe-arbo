@@ -1,0 +1,41 @@
+Total records: 0
+32: 0
+|Death Note| not deleted because it does not exist in the Name database.
+|Another Note| not updated because it does not exist in the Name database.
+|Death Note| has been added to the Name database.
+|Death Note| 4
+Total records: 1
+|Death Note| duplicates a record already in the Name database.
+16: 16
+|Death Note| not updated because the field |Genre| does not exist
+Updated Record: |Death Note<SEP>Genre<SEP>Anime|
+No free blocks are available.
+Memory pool expanded to be 64 bytes.
+|Can You Handle?| has been added to the Name database.
+|Another Test| has been added to the Name database.
+|Death Note| 4
+|Can You Handle?| 6
+|Another Test| 9
+Total records: 3
+|Death Note| has been deleted from the Name database.
+|Death Note| has been added to the Name database.
+|Another Test| has been deleted from the Name database.
+16: 16 48
+Memory pool expanded to be 128 bytes.
+Updated Record: |Death Note<SEP>Genre<SEP>Animation|
+Updated Record: |Death Note<SEP>Genre<SEP>Animation<SEP>Format<SEP>Series|
+Updated Record: |Death Note<SEP>Format<SEP>Series<SEP>Genre<SEP>Anime|
+Updated Record: |Death Note<SEP>Format<SEP>Series|
+|Fullmetal Alchemist| has been added to the Name database.
+|Spirited Away| has been added to the Name database.
+|death note| has been added to the Name database.
+Memory pool expanded to be 256 bytes.
+Name hash table size doubled to 20 slots.
+|Castle in the Sky| has been added to the Name database.
+|Fullmetal Alchemist| 3
+|Death Note| 4
+|Spirited Away| 5
+|Castle in the Sky| 7
+|death note| 8
+|Can You Handle?| 16
+Total records: 6

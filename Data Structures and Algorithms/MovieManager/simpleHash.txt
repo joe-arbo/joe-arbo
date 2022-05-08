@@ -1,0 +1,7 @@
+print hashtable
+add             Superman
+        add Batman
+add Ninja Turtles
+add hi man          
+add Oh     man
+print  hashtable

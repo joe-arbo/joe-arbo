@@ -1,0 +1,16 @@
+print blocks
+add x
+print blocks
+add y
+add z
+add good news
+delete x
+delete y
+add xy
+print blocks
+add x
+add y
+delete z
+delete y
+add zy
+print blocks
