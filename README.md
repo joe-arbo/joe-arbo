@@ -5,10 +5,12 @@ A collection of all projects and exercises completed or worked on by Joseph Arbo
 
 WIP
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=joe-arbo&count_private=true&include_all_commits=true&hide=contribs,prs,stars&show_icons=true&theme=tokyonight&text_color=FFFFFF)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=joe-arbo&count_private=true&include_all_commits=true&show_icons=true&theme=tokyonight&text_color=FFFFFF)
 
 <!--
 **joe-arbo/joe-arbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+&hide=contribs,prs,stars
 
 Here are some ideas to get you started:
 
