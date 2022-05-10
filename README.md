@@ -2,6 +2,7 @@
 
 ## Portfolio
 A collection of all projects and exercises completed or worked on by Joseph Arbolino
+
 WIP
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=joe-arbo&count_private=true&include_all_commits=true&show_icons=true&theme=tokyonight&text_color=FFFFFF)
