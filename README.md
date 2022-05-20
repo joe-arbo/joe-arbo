@@ -8,7 +8,7 @@ This is also the reason GitHub reports the language variance to be ~70% Python. 
 
 If you a seeing this on my Profile page, you can navigate the main repository page click [HERE](https://github.com/joe-arbo/joe-arbo), otherwise you can navigate to the individual folders described below by clicking on their header.
 
-#
+---
 
 ### [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
 
