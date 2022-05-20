@@ -7,7 +7,7 @@ This is also the reason GitHub reports the language variance to be ~70% Python. 
 Thanks for stopping by!!
 #
 
-### Arduino
+### [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
 
 ### Artificial Intelligence
 
