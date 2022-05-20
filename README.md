@@ -6,7 +6,7 @@ This is a collection of all the projects and exercises I completed or collaborat
 
 This is also the reason GitHub reports the language variance to be ~70% Python. Most of the supporting files provided for us were written in Python so the actual split between the languages I actively practice and code in is more even. Below is a table of contents (of a sort) giving a brief overview of what each folder in this repository contains. There will be more information provided in each folder, if you have any questions please do not hesitate to contact me with the details found in the [Contact Information](#contact-information) section.
 
-To navigate the main repository page click [HERE](https://github.com/joe-arbo/joe-arbo), otherwise you can navigate to the individual folders described below by clicking on their header.
+If you a seeing this on my Profile page, you can navigate the main repository page click [HERE](https://github.com/joe-arbo/joe-arbo), otherwise you can navigate to the individual folders described below by clicking on their header.
 
 #
 
