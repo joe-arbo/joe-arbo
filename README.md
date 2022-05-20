@@ -12,19 +12,19 @@ If you a seeing this on my Profile page, you can navigate the main repository pa
 
 ### [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
 
-### Artificial Intelligence
+### [Artificial Intelligence](https://github.com/joe-arbo/joe-arbo/tree/main/Artificial%20Intelligence)
 
-### Computer Systems
+### [Computer Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Computer%20Systems)
 
-### Data Structures and Algorithms
+### [Data Structures and Algorithms](https://github.com/joe-arbo/joe-arbo/tree/main/Data%20Structures%20and%20Algorithms)
 
-### Embedded Systems
+### [Embedded Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Embedded%20Systems)
 
-### IEEE Robotics 2022
+### [IEEE Robotics 2022](https://github.com/joe-arbo/joe-arbo/tree/main/IEEE%20Robotics%202022)
 
-### Large Scale Software Development
+### [Large Scale Software Development](https://github.com/joe-arbo/joe-arbo/tree/main/Large%20Scale%20Software%20Development)
 
-### Software Reverse Engineering
+### [Software Reverse Engineering](https://github.com/joe-arbo/joe-arbo/tree/main/Software%20Reverse%20Engineering)
 
 ### Contact Information
 
