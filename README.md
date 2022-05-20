@@ -8,14 +8,15 @@ This is also the reason GitHub reports the language variance to be ~70% Python. 
 
 If you a seeing this on my Profile page, you can navigate the main repository page click [HERE](https://github.com/joe-arbo/joe-arbo), otherwise you can navigate to the individual folders described below by clicking on their header.
 
-#
+---
 
 ### [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
 
 Includes two personal projects and all projects from my Advanced Real-Time Systems class. RTS was an interesting class based on the FreeRTOS real-time operating system. Most of the class focused on the scheduling of tasks in an OS and the different methods to do so. For example, RM and DM scheduling are accurately modeled in one of the projects, and tasks are simulated using an Arduino file. FreeRTOS has a library usable in Arduino and can be used to have greater system-level control over applications running on Arduino compatible microcontrollers (in our case an Arduino Mega). 
 
 As for the personal projects, my favorite is included in this section. It was inspired by the COVID closures and my Dad's drinking buddies now deciding their new "watering hole" would be my driveway. It's not the most complex project, but it was the most fun I had designing something and it allowed me to step outside my comfort zone. Take a shortcut to it [HERE](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino/Can_Crusher).
-#
+
+---
 
 ### [Artificial Intelligence](https://github.com/joe-arbo/joe-arbo/tree/main/Artificial%20Intelligence)
 
