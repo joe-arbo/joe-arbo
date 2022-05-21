@@ -29,7 +29,7 @@ Each project is housed inside its own folder and has an index.html file explaini
 
 Here are some run-time GUI examples (Iteration and Inference respectively):
 
-<img src="./Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="450"/><img src="./Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="450"/>
+<img src="./Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="450"/>       <img src="./Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="450"/>
 
 ---
 
