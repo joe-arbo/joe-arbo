@@ -65,7 +65,18 @@ These projects are hard to show graphically and even harder to run while showing
 
 ### [Software Reverse Engineering](https://github.com/joe-arbo/joe-arbo/tree/main/Software%20Reverse%20Engineering)
 
-### Contact Information
+### [Contact Information](#contact-information)
+
+Joseph Arbolino
+Virginia Tech 2022
+Bachelor’s: Computer Engineering
+Major: Software Systems 
+Minor: Computer Science
+
+Email: [joearbo13@vt.edu]
+Cell:  [973-590-1442]
+
+
 
 <!--
 **joe-arbo/joe-arbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
