@@ -31,7 +31,11 @@ Here are some run-time GUI examples (Iteration and Inference respectively):
 
 <img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="350"/><img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="320"/>
 
+---
+
 ### [Computer Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Computer%20Systems)
+
+
 
 ### [Data Structures and Algorithms](https://github.com/joe-arbo/joe-arbo/tree/main/Data%20Structures%20and%20Algorithms)
 
