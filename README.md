@@ -26,7 +26,7 @@ Each project is housed inside it's own folder and has an index.html file explain
 
 Here are some AI concept examples:
 
-<img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="350"/><img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="350"/>
+<img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="350"/><img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="330"/>
 
 ### [Computer Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Computer%20Systems)
 
