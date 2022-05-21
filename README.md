@@ -10,7 +10,7 @@ If you are seeing this on my Profile page, you can navigate to the main reposito
 
 ---
 
-### [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
+## [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
 
 Includes two personal projects and all projects from my Advanced Real-Time Systems class. RTS was an interesting class based on the FreeRTOS real-time operating system. Most of the class focused on the scheduling of tasks in an OS and the different methods to do so. For example, RM and DM scheduling are accurately modeled in one of the projects, and tasks are simulated using an Arduino file. FreeRTOS has a library usable in Arduino and gives greater system-level control over applications running on Arduino compatible microcontrollers (in our case an Arduino Mega). 
 
@@ -19,6 +19,7 @@ As for the personal projects, my favorite is included in this section. It was in
 The other personal project was a simple bluetooth based Android application using Arduino that I worked on with a friend. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, and Android applications. None of this was intended for deployable use. You can see some examples of this project below.
 
 <img src="./Arduino/Bluetooth/breadboard.jpg" alt="Breadboard" width="450"/><img src="./Arduino/Bluetooth/GUI.png" alt="App GUI" height="350"/>
+
 ---
 
 ### [Artificial Intelligence](https://github.com/joe-arbo/joe-arbo/tree/main/Artificial%20Intelligence)
