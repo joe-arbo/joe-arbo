@@ -1,0 +1,9 @@
+fix centering code
+
+change arm sequence so it does not do entire sequence when looking left/right
+
+camera not detecting net all the time? maybe change detection angle of arm
+
+turn sequence: maybe two forward motions instead of one
+
+remove straight up position for arm (bad for camera cable)
