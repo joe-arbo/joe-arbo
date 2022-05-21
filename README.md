@@ -28,7 +28,7 @@ Here are some AI concept examples:
 ![iteration_image](https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/value.png "Iteration Example") 
 ![inference_image](https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/busters.png "Inference Example")
 
-<img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="200"/>
+<img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="500"/>
 
 ### [Computer Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Computer%20Systems)
 
