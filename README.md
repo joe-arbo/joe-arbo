@@ -72,7 +72,7 @@ The team was comprised of many sub-teams of which I was the leader of 2. I began
 
 This section is basically our team GitHub copied for my own personal records. I only added a new README and some pictures to demonstrate some of the robot functionality. This project was a huge success! We ended up placing 1st out of 28 teams in attendance. You can check out those rankings [HERE](https://github.com/joe-arbo/joe-arbo/blob/main/IEEE%20Robotics%202022/ranking.png) and a picture of the robot and the team below (the hats were from a local restaurant showing us support).
 
-<img src="./IEEE%20Robotics%202022/robot_front.png" alt="Robot Front" width="350"/><img src="./IEEE%20Robotics%202022/team_pic.jpg" alt="Team Picture" width="450"/>
+<img src="./IEEE%20Robotics%202022/robot_front.png" alt="Robot Front" width="300"/><img src="./IEEE%20Robotics%202022/team_pic.jpg" alt="Team Picture" width="500"/>
 
 ---
 
