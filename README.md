@@ -65,9 +65,21 @@ This class was programmed in C and uses the MSPs ports (similar to Arduino) to w
 
 ### [IEEE Robotics 2022](https://github.com/joe-arbo/joe-arbo/tree/main/IEEE%20Robotics%202022)
 
+
+
+---
+
 ### [Large Scale Software Development](https://github.com/joe-arbo/joe-arbo/tree/main/Large%20Scale%20Software%20Development)
 
+
+
+---
+
 ### [Software Reverse Engineering](https://github.com/joe-arbo/joe-arbo/tree/main/Software%20Reverse%20Engineering)
+
+
+
+---
 
 ### [Contact Information](#contact-information)
 
