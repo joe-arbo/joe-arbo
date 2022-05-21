@@ -18,7 +18,7 @@ As for the personal projects, my favorite is included in this section. It was in
 
 The other personal project was a simple bluetooth based Android application using Arduino that I worked on with a friend. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, and Android applications. None of this was intended for deployable use. You can see some examples of this project below.
 
-<img src="./Arduino/Bluetooth/breadboard.jpg" alt="Breadboard" width="400"/><img src="./Arduino/Bluetooth/GUI.png" alt="App GUI" height="350"/>
+<img src="./Arduino/Bluetooth/breadboard.jpg" alt="Breadboard" width="450"/><img src="./Arduino/Bluetooth/GUI.png" alt="App GUI" height="350"/>
 ---
 
 ### [Artificial Intelligence](https://github.com/joe-arbo/joe-arbo/tree/main/Artificial%20Intelligence)
@@ -29,7 +29,7 @@ Each project is housed inside its own folder and has an index.html file explaini
 
 Here are some run-time GUI examples (Iteration and Inference respectively):
 
-<img src="./Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="350"/><img src="./Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="320"/>
+<img src="./Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="450"/><img src="./Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="450"/>
 
 ---
 
