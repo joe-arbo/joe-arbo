@@ -69,12 +69,14 @@ These projects are hard to show graphically and even harder to run while showing
 
 #### Joseph Arbolino
 Virginia Tech 2022<br>
-Bachelor’s:  Computer Engineering<br>
-Major:       Software Systems<br>
-Minor:       Computer Science<br>
+Bachelor’s: Computer Engineering<br>
+Major: Software Systems<br>
+Minor: Computer Science<br>
 
-Email:  joearbo13@vt.edu<br>
-Cell:     973-590-1442
+Email: joearbo13@vt.edu<br>
+Cell: 973-590-1442
+
+---
 
 
 
