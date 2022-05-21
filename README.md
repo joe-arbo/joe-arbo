@@ -67,7 +67,7 @@ These projects are hard to show graphically and even harder to run while showing
 
 ### [Contact Information](#contact-information)
 
-Joseph Arbolino<br>
+#### Joseph Arbolino<br>
 Virginia Tech 2022<br>
 Bachelor’s: Computer Engineering<br>
 Major: Software Systems<br>
