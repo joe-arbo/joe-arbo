@@ -16,7 +16,7 @@ Includes two personal projects and all projects from my Advanced Real-Time Syste
 
 As for the personal projects, my favorite is included in this section. It was inspired by the COVID closures and my Dad's drinking buddies now deciding their new "watering hole" would be my driveway. It's not the most complex project, but it was the most fun I had designing something and it allowed me to step outside my comfort zone. Take a shortcut to it [HERE](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino/Can_Crusher).
 
-The other personal project was a simple bluetooth based Android application using Arduino. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, and Android applications. None of this was intended for deployable use. You can see some examples of this project below.
+The other personal project was a simple bluetooth based Android application using Arduino that I worked on with a friend. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, and Android applications. None of this was intended for deployable use. You can see some examples of this project below.
 
 <img src="https://github.com/joe-arbo/joe-arbo/blob/main/Arduino/Bluetooth/breadboard.jpg" alt="Breadboard" width="400"/><img src="https://github.com/joe-arbo/joe-arbo/blob/main/Arduino/Bluetooth/GUI.png" alt="App GUI" height="350"/>
 ---
@@ -28,7 +28,6 @@ This class was adapted from a course at UC Berkeley and used by the Virginia Tec
 Each project is housed inside its own folder and has an index.html file explaining how to run the tests and what was required for each project. There is also a README in each project folder explaining briefly what the project entailed and what concepts it taught, as well as pictures of what each program's GUI looks like at run-time to demonstrate their functionality.  
 
 Here are some run-time GUI examples:
-![image](https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/value.png)
 <img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="350"/><img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="320"/>
 
 ### [Computer Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Computer%20Systems)
