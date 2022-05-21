@@ -55,11 +55,11 @@ These projects are hard to show graphically and even harder to run while showing
 
 ### [Embedded Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Embedded%20Systems)
 
-The primary focus of my Embedded Systems course was to learn how to interface with the MSP432P401R LaunchPad microcontroller and its BoosterPack hardware module. There are 3 projects for this class, each building on the last. The first project focuses on learning how the MSP and BoosterPack comunicate with one another, project two focuses on the GUI elements and the interaction between the microcontroller and UART keyboard inputs, and the third project focused on making a fully functional game using the BoosterPacks controls. 
+The primary focus of my Embedded Systems course was to learn how to interface with the MSP432P401R LaunchPad microcontroller and its BoosterPack hardware module. There are 3 projects for this class, each building on the last. The first project focuses on learning how the MSP and BoosterPack communicate with one another, project two focuses on the GUI elements and the interaction between the microcontroller and UART keyboard inputs, and the third project focused on making a fully functional game using the BoosterPacks controls. 
 
 This class was programmed in C and uses the MSPs ports (similar to Arduino) to write information to the BoosterPack. This made designing and programming a relatively simple game more challenging because it was no longer as simple as telling the screen what to display. These projects can't be simulated without the MSP so explanations and pictures of the BoosterPack display are included in each project folder. An example of the MSPs display can be seen below.
 
-<img src="./Embed" alt="./Embedded%20Systems/project3/GUI.png" width="400"/>
+<img src="./Embedded%20Systems/project3/GUI.png" alt="MSP_GUI_Example" width="450"/>
 
 ---
 
