@@ -2,15 +2,15 @@
 
 ### Thanks for stopping in!
 
-This is a collection of all the projects and exercises I completed or collaborated on. I have tried to make this GitHub as user-friendly as possible and have included as many explanations, pictures, examples, and directions for execution as I could. Most of these projects were completed during my college career and therefore include many files needed for the execution of the program but I didn't write myself. These files were all interfaced with during the completion of the projects so I do understand how all the code works and what its purpose is, but it would be wrong of me to pass these on as my own work. 
+This is a collection of all the projects and exercises I completed or collaborated on. I have tried to make this GitHub as user-friendly as possible and have included as many explanations, pictures, examples, and directions for execution as I could. Most of these projects were completed during my college career and therefore include many files needed for the execution of the programs but that I didn't write myself. These files were all interfaced with during the completion of the projects so I do understand how all the code works and what its purpose is, but it would be wrong of me to pass these on as my own work. 
 
-This is also the reason GitHub reports the language variance to be ~70% Python. Most of the supporting files provided for us were written in Python so the actual split between the languages I actively practice and code in is more even. Below is a table of contents (of a sort) giving a brief overview of what each folder in this repository contains. There will be more information provided in each folder, if you have any questions please do not hesitate to contact me with the details found in the [Contact Information](#contact-information) section.
+This is also the reason GitHub reports the language variance to be ~70% Python. Most of the supporting files provided for us were written in Python so the actual split between the languages I actively practice and code in is more even. Below is a table of contents (of a sort) giving an overview of what each folder in this repository contains. There will be more information provided in each folder, if you have any questions please do not hesitate to contact me with the details found in the [Contact Information](#contact-information) section.
 
-If you a seeing this on my Profile page, you can navigate the main repository page click [HERE](https://github.com/joe-arbo/joe-arbo), otherwise you can navigate to the individual folders described below by clicking on their header.
+If you are seeing this on my Profile page, you can navigate to the main repository by clicking [HERE](https://github.com/joe-arbo/joe-arbo), or you can navigate to the individual folders described below by clicking on their header.
 
 ---
 
-### [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
+## [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
 
 Includes two personal projects and all projects from my Advanced Real-Time Systems class. RTS was an interesting class based on the FreeRTOS real-time operating system. Most of the class focused on the scheduling of tasks in an OS and the different methods to do so. For example, RM and DM scheduling are accurately modeled in one of the projects, and tasks are simulated using an Arduino file. FreeRTOS has a library usable in Arduino and gives greater system-level control over applications running on Arduino compatible microcontrollers (in our case an Arduino Mega). 
 
@@ -19,6 +19,7 @@ As for the personal projects, my favorite is included in this section. It was in
 The other personal project was a simple bluetooth based Android application using Arduino that I worked on with a friend. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, and Android applications. None of this was intended for deployable use. You can see some examples of this project below.
 
 <img src="./Arduino/Bluetooth/breadboard.jpg" alt="Breadboard" width="450"/><img src="./Arduino/Bluetooth/GUI.png" alt="App GUI" height="350"/>
+
 ---
 
 ### [Artificial Intelligence](https://github.com/joe-arbo/joe-arbo/tree/main/Artificial%20Intelligence)
@@ -65,9 +66,21 @@ This class was programmed in C and uses the MSPs ports (similar to Arduino) to w
 
 ### [IEEE Robotics 2022](https://github.com/joe-arbo/joe-arbo/tree/main/IEEE%20Robotics%202022)
 
+
+
+---
+
 ### [Large Scale Software Development](https://github.com/joe-arbo/joe-arbo/tree/main/Large%20Scale%20Software%20Development)
 
+
+
+---
+
 ### [Software Reverse Engineering](https://github.com/joe-arbo/joe-arbo/tree/main/Software%20Reverse%20Engineering)
+
+
+
+---
 
 ### [Contact Information](#contact-information)
 
