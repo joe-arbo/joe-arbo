@@ -82,7 +82,7 @@ This class was more about concepts then actual coding, but I wanted to include i
 
 The project itself is not very complex and was coding in C++ and implemented with Qt. Its a GUI based workout scheduling app that was only completed to get the class familiar with Scrum. As with other classes this project was completed as a group but many of the files were at least modified by me if not coded in their entirety. Below you can see some examples of the GUI.
 
-<img src="./Large%20Scale%20Software%20Development/caledar.png" alt="Calendar" width="350"/><img src="./Large%20Scale%20Software%20Development/exercise.png" alt="Exercise" width="400"/>
+<img src="./Large%20Scale%20Software%20Development/calendar.png" alt="Calendar" width="350"/><img src="./Large%20Scale%20Software%20Development/exercise.png" alt="Exercise" width="400"/>
 
 ---
 
