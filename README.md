@@ -66,11 +66,21 @@ This class was programmed in C and uses the MSPs ports (similar to Arduino) to w
 
 ### [IEEE Robotics 2022](https://github.com/joe-arbo/joe-arbo/tree/main/IEEE%20Robotics%202022)
 
+This project served as my senior capstone and as an opportunity to dive into the world of robotics, which prior to this, I had little experience with. The projects requirements were to build a robot that could compete at IEEE Southeast Con 2022 in Mobile, Alabama. Each year IEEE holds a robotics competition during their conference and Virginia Tech usually participates. The team had a lot of creative freedom with this project, which made it a very enjoyable experience. 
 
+The team was comprised of many sub-teams of which I was the leader of 2. I began as the arm team lead and worked to finalize the design and functionality of the arm sub-system. I also structured the code for the arm which would later be implemented into the final robot. I then moved to the navigation/sensor sub-team and was designated team lead upon my arrival. Here I worked to finalize the sensor code (PID system for active movement correction) and wrote code to allow the wheels/motors to communicate with the sensors.
+
+This section is basically our team GitHub copied for my own personal records. I only added a new README and some pictures to demonstrate some of the robot functionality. This project was a huge success! We ended up placing 1st out of 28 teams in attendance. You can check out those rankings [HERE](https://github.com/joe-arbo/joe-arbo/blob/main/IEEE%20Robotics%202022/ranking.png) and a picture of the robot and the team below (the hats were from a local restaurant showing us support).
+
+<img src="./IEEE%20Robotics%202022/robot_front.png" alt="Robot Front" width="300"/><img src="./IEEE%20Robotics%202022/team_pic.jpg" alt="Team Picture" width="500"/>
 
 ---
 
 ### [Large Scale Software Development](https://github.com/joe-arbo/joe-arbo/tree/main/Large%20Scale%20Software%20Development)
+
+This class was more about concepts then actual coding, but I wanted to include it here because it taught me many valuable coding methodologies that are utilized in the industry. These ranged from individual coding techniques (e.g., Singleton, State Machines), to developmental practices (e.g., Scrum, Waterfall). This section only cosists of one project that implemented the methods learned during the course. Most importantly, we used Scrum to manage our team workflow, allowing me to become familiar with the most common developmental managment system. 
+
+The project itself is not very complex and was coding in C++ and implemented with Qt. Its a GUI based workout scheduling app that was only completed to get the class familiar with Scrum. As with other classes this project was completed as a group but many of the files were at least modified by me if not coded in their entirety. Below you can see some examples of the GUI.
 
 
 
