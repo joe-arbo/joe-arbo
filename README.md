@@ -12,13 +12,19 @@ If you a seeing this on my Profile page, you can navigate the main repository pa
 
 ### [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
 
-Includes two personal projects and all projects from my Advanced Real-Time Systems class. RTS was an interesting class based on the FreeRTOS real-time operating system. Most of the class focused on the scheduling of tasks in an OS and the different methods to do so. For example, RM and DM scheduling are accurately modeled in one of the projects, and tasks are simulated using an Arduino file. FreeRTOS has a library usable in Arduino and can be used to have greater system-level control over applications running on Arduino compatible microcontrollers (in our case an Arduino Mega). 
+Includes two personal projects and all projects from my Advanced Real-Time Systems class. RTS was an interesting class based on the FreeRTOS real-time operating system. Most of the class focused on the scheduling of tasks in an OS and the different methods to do so. For example, RM and DM scheduling are accurately modeled in one of the projects, and tasks are simulated using an Arduino file. FreeRTOS has a library usable in Arduino and gives greater system-level control over applications running on Arduino compatible microcontrollers (in our case an Arduino Mega). 
 
 As for the personal projects, my favorite is included in this section. It was inspired by the COVID closures and my Dad's drinking buddies now deciding their new "watering hole" would be my driveway. It's not the most complex project, but it was the most fun I had designing something and it allowed me to step outside my comfort zone. Take a shortcut to it [HERE](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino/Can_Crusher).
 
 ---
 
 ### [Artificial Intelligence](https://github.com/joe-arbo/joe-arbo/tree/main/Artificial%20Intelligence)
+
+This class was adapted from a course at UC Berkeley and used by the Virginia Tech CS department. As a result, most projects are acredited to individuals belonging to UC Berkeley. The class explores common AI principles from simple search algorithms, to Q-learning, to Inference Observation. I completed 5 main projects here that use a Pac-Man-like game interface to demonstrate these core concepts. 
+
+Each project is housed inside it's own folder and has an index.html file explaining how to run the tests and what was required for each project. There is also a README in each project folder explaining briefly what the project entailed and what concepts it taught, as well as pictures of what each program looks like at run-time to demonstrate their functionality.  
+
+![image](https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/value.png "Title")
 
 ### [Computer Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Computer%20Systems)
 
