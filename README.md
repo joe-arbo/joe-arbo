@@ -16,6 +16,9 @@ Includes two personal projects and all projects from my Advanced Real-Time Syste
 
 As for the personal projects, my favorite is included in this section. It was inspired by the COVID closures and my Dad's drinking buddies now deciding their new "watering hole" would be my driveway. It's not the most complex project, but it was the most fun I had designing something and it allowed me to step outside my comfort zone. Take a shortcut to it [HERE](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino/Can_Crusher).
 
+The other personal project was a simple bluetooth based Android application using Arduino. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, and Android applications. None of this was intended for deployable use. You can see some examples of this project below.
+
+<img src="https://github.com/joe-arbo/joe-arbo/blob/main/Arduino/Bluetooth/breadboard.jpg" alt="Breadboard" width="320"/><img src="https://github.com/joe-arbo/joe-arbo/blob/main/Arduino/Bluetooth/GUI.png" alt="App GUI" width="350"/>
 ---
 
 ### [Artificial Intelligence](https://github.com/joe-arbo/joe-arbo/tree/main/Artificial%20Intelligence)
