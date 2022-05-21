@@ -25,10 +25,8 @@ This class was adapted from a course at UC Berkeley and used by the Virginia Tec
 Each project is housed inside it's own folder and has an index.html file explaining how to run the tests and what was required for each project. There is also a README in each project folder explaining briefly what the project entailed and what concepts it taught, as well as pictures of what each program looks like at run-time to demonstrate their functionality.  
 
 Here are some AI concept examples:
-![iteration_image](https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/value.png "Iteration Example") 
-![inference_image](https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/busters.png "Inference Example")
-
-<img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="500"/>
+<img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="400"/>
+<img src="https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="400"/>
 
 ### [Computer Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Computer%20Systems)
 
