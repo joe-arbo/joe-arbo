@@ -66,7 +66,13 @@ This class was programmed in C and uses the MSPs ports (similar to Arduino) to w
 
 ### [IEEE Robotics 2022](https://github.com/joe-arbo/joe-arbo/tree/main/IEEE%20Robotics%202022)
 
+This project served as my senior capstone and as an opportunity to dive into the world of robotics, which prior to this, I had little experience with. The projects requirements were to build a robot that could compete at IEEE Southeast Con 2022 in Mobile, Alabama. Each year IEEE holds a robotics competition during their conference and Virginia Tech usually participates. The team had a lot of creative freedom with this project, which made it a very enjoyable experience. 
 
+The team was comprised of many sub-teams of which I was the leader of 2. I began as the arm team lead and worked to finalize the design and functionality of the arm sub-system. I also structured the code for the arm which would later be implemented into the final robot. I then moved to the navigation/sensor sub-team and was designated team lead upon my arrival. Here I worked to finalize the sensor code (PID system for active movement correction) and wrote code to allow the wheels/motors to communicate with the sensors.
+
+This section is basically our team GitHub copied for my own personal records. I only added a new README and some pictures to demonstrate some of the robot functionality. This project was a huge success! We ended up placing 1st out of 28 teams in attendance. You can check out those rankings [HERE](https://github.com/joe-arbo/joe-arbo/blob/main/IEEE%20Robotics%202022/ranking.png) and a picture of the robot and the team below (the hats were from a local restaurant showing us support).
+
+<img src="./IEEE%20Robotics%202022/robot_front.png" alt="Robot Front" width="400"/><img src="./IEEE%20Robotics%202022/team_pic.jpg" alt="Team Picture" width="400"/>
 
 ---
 
