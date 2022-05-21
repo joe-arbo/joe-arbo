@@ -29,7 +29,7 @@ Each project is housed inside its own folder and has an index.html file explaini
 
 Here are some run-time GUI examples (Iteration and Inference respectively):
 
-<img src="./Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="450"/>            <img src="./Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="450"/>
+<img src="./Artificial%20Intelligence/p3/value.png" alt="Iteration Example" width="450"/><img src="./Artificial%20Intelligence/p4/busters.png" alt="Inference Example" width="450"/>
 
 ---
 
@@ -44,6 +44,14 @@ This class provides many support files for the completion of its projects so not
 ---
 
 ### [Data Structures and Algorithms](https://github.com/joe-arbo/joe-arbo/tree/main/Data%20Structures%20and%20Algorithms)
+
+The name of this course speaks for itself. It explores common data structures and sorting algorithms and how to utilize them in programming applications. This class covered external sorting using a Min-Heap and Merge Sort, key-value pair sorting using hash maps, and key-value pair sorting using a skip list and Quad-Tree. This class was partner based and all files were worked on by both my partner and me. The author of each file is listed in the JavaDocs of said file and only indicates the creator, it does not reflect work done.
+
+This class was done entirely in Java, however, I did take another DSA course that was done in C++. That class explored similar topics such as linked lists, binary search algorithms/trees, Ray-Tracing, Deques, mini-max, and more. The projects completed for that class were much more in-depth than the Java class and I wish I could display them here. Unfortunately, the SSD those projects were stored on was corrupted before I had a chance to back them up. Because of this, the only projects located here are in Java. 
+
+These projects are hard to show graphically and even harder to run while showing any intelligible information. They were also graded automatically so instead of directions for execution, I briefly describe what each project implements and which files are important.
+
+---
 
 ### [Embedded Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Embedded%20Systems)
 
