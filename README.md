@@ -6,11 +6,11 @@ This is a collection of all the projects and exercises I completed or collaborat
 
 This is also the reason GitHub reports the language variance to be ~70% Python. Most of the supporting files provided for us were written in Python so the actual split between the languages I actively practice and code in is more even. Below is a table of contents (of a sort) giving an overview of what each folder in this repository contains. There will be more information provided in each folder, if you have any questions please do not hesitate to contact me with the details found in the [Contact Information](#contact-information) section.
 
-If you are seeing this on my Profile page, you can navigate to the main repository by clicking [HERE](https://github.com/joe-arbo/joe-arbo), or you can navigate to the individual folders described below by clicking on their header.
+If you are seeing this on my Profile page, you can navigate to the main repository by clicking [HERE](https://github.com/joe-arbo/joe-arbo), otherwise you can navigate to the individual folders described below by clicking on their header.
 
 ---
 
-## [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
+### [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
 
 Includes two personal projects and all projects from my Advanced Real-Time Systems class. RTS was an interesting class based on the FreeRTOS real-time operating system. Most of the class focused on the scheduling of tasks in an OS and the different methods to do so. For example, RM and DM scheduling are accurately modeled in one of the projects, and tasks are simulated using an Arduino file. FreeRTOS has a library usable in Arduino and gives greater system-level control over applications running on Arduino compatible microcontrollers (in our case an Arduino Mega). 
 
