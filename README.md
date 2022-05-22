@@ -18,7 +18,7 @@ As for the personal projects, my favorite is included in this section. It was in
 
 The other personal project was a simple bluetooth based Android application using Arduino that I worked on with a friend. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, LCD displays and Android applications. The file included here is only the Arduino portion of the project. None of this was intended for deployable use. You can see some examples of this project below.
 
-<img src="./Arduino/Bluetooth/breadboard.jpg" alt="Breadboard" width="450"/><img src="./Arduino/Bluetooth/GUI.png" alt="App GUI" height="350"/>
+<img src="./Arduino/SmartHome/breadboard.jpg" alt="Breadboard" width="450"/><img src="./Arduino/SmartHome/GUI.png" alt="App GUI" height="350"/>
 
 ---
 
