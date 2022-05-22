@@ -10,7 +10,7 @@ Thus, the Can Crusher was born. My idea was to create a contraption that the old
 It's not the prettiest devise on the planet but it was the first time I'd engineered something from start to finish. It's still one of my fondest summers and even though the code is not complex, and the idea is simple, it remains by favorite project. I've linked a video below of the Can Crusher in action.
 
 <a href="https://youtube.com/shorts/ebb4qq3fnJ4?feature=share" target="_blank">
-<img src="./Can_Crusher/crusher_pic.png" alt="Crusher Picture" height="500"/></a>
+<img src="./Can_Crusher/crusher_pic.png" alt="Crusher Picture" height="400"/></a>
 
 ### [Real-Time Systems](./Real-Time%20Systems)
 
