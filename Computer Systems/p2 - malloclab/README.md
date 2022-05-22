@@ -1,4 +1,9 @@
-# Heap Inspector
+# Project 2
+This project deploys a custom Malloc implementation and a Heap Inspector. Its purpose was to teach us about memory allocation and management. 
+
+***\*Disclaimer\****: The README text below was not written by me, nor do I take any credit. This was our provided project specification README and does a much better job describing the project than anything I could write up.
+
+## Heap Inspector
 
 The specification for Project 2 is on the course website. This README describes the specification for a brand new tool that can aid in the development of the malloclab project.
 
