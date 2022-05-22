@@ -9,7 +9,7 @@ Thus, the Can Crusher was born. My idea was to create a contraption that the old
 
 It's not the prettiest devise on the planet but it was the first time I'd engineered something from start to finish. It's still one of my fondest summers and even though the code is not complex, and the idea is simple, it remains by favorite project. I've linked a video below of the Can Crusher in action.
 
-<a href="https://youtube.com/shorts/ebb4qq3fnJ4?feature=share" target="_blank">
+<a href="https://youtube.com/shorts/ebb4qq3fnJ4?feature=share" target="_blank"></a>
 <!-- <img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 
 ### [Real-Time Systems](./Real-Time%20Systems)
