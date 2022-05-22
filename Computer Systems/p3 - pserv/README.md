@@ -1,5 +1,9 @@
 
-# Personal Server
+# Project 3
+
+Project 3 taught us about Dockers and private/public servers. It used a React based JS web app to build our server on.
+
+## Personal Server
 This repository contains the base files for the CS 3214
 "Personal Secure Server" project.
 
