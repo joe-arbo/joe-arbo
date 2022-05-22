@@ -1,6 +1,8 @@
 # Arduino
 Here are some of the Arduino based projects that I've completed. Below is a brief description of the sub-folders. To navigate to them you can click each sections header or the sub-folders above. More information will be included in each sub-folder if necessary.
 
+---
+
 ### [Can Crusher](./Can_Crusher/)
 
 This is my favorite personal project I've worked on. Oddly enough there wasn’t much coding involved. It was a summer project inspired by the sudden influx of "driveway drinkers" during the lockdown period of Covid. My Dad's buddies were frequently at my home during the lockdown having get together outside in our driveway. It was a place for them to hang out even if all the restaurants and bars were closed. I was tasked with cleaning up after them and had an interesting idea, if I could motivate them to throw their own cans away, while simultaneously reducing the space each can takes up in a garbage can, I would have to do much less cleaning.
