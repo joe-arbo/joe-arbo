@@ -1,8 +1,8 @@
 # Artificial Intelligence
 
-This class explores common AI principles from simple search algorithms, to Q-learning, to Inference Observation. I completed 5 main projects here that use a Pac-Man-like game interface to demonstrate these core concepts. Each project is housed inside its own folder and has an `index.html` file explaining how to run the tests and what was required for each project. There is also a README in each project folder explaining briefly what the project entailed and what concepts it taught, a link to access the `index.html` file, as well as pictures of what each program's GUI looks like at run-time to demonstrate their functionality.
+This class explores common AI principles from simple search algorithms to Q-learning, to Inference Observation. I completed 5 main projects here that use a Pac-Man-like game interface to demonstrate these core concepts. Each project is housed inside its own folder and has an `index.html` file explaining how to run the tests and what was required for each project. There is also a README in each project folder explaining briefly what the project entailed and what concepts it taught, a link to access the `index.html` file, as well as pictures of what each program's GUI looks like at run-time to demonstrate their functionality.
 
-Despite the more indepth information in each project folder, I have still included a breif description along with a shortcut to each section below.
+Despite the more in-depth information in each project folder, I have still included a brief description along with a shortcut to each section below.
 
 ---
 
