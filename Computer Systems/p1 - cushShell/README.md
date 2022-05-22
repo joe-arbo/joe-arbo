@@ -7,9 +7,9 @@ Rio Cross
 ---
 
 ### How to Execute the Shell
-set your directory to 'src'<br>
-run 'make'<br>
-run './cush'
+- Set your directory to 'src'
+- Run 'make'
+- Run './cush'
 
 ---
 
@@ -19,14 +19,14 @@ Shell closes on unsupported command
 ---
 
 ### Description of Base Functionality
-- `jobs`: Iterates through all jobs which exist, and calls print_job on each.<br>
-- `fg`: Gets the job from the provided jid, then sends SIGCONT with kill() to the fetched pid from jid. Moves job to foreground and gives it the terminal.<br>
-- `bg`: Gets the job from the provided jid, then sends SIGCONT with kill() to the fetched pid from jid. Moves job to background.<br>
-- `kill`: Gets the job from the provided jid, then sends SIGTERM with kill() to the fetched pid from jid.<br>
-- `stop`: Gets the job from the provided jid, then sends SIGTSTP with kill() to the fetched pid from jid. Sets job status to STOPPED.<br>
-- `exit`: Calls exit() with decision logic based on if a status is provided.<br>
-- `ˆC`: The child recieves the SIGINT signal in handle_child_status, and process counter is decremented.<br>
-- `ˆZ`: The child recieves the SIGTSTOP signal in handle_child_status, the terminal is saved, and the job status is set to STOPPED.<br>
+- `jobs`: Iterates through all jobs which exist, and calls print_job on each.
+- `fg`: Gets the job from the provided jid, then sends SIGCONT with kill() to the fetched pid from jid. Moves job to foreground and gives it the terminal.
+- `bg`: Gets the job from the provided jid, then sends SIGCONT with kill() to the fetched pid from jid. Moves job to background.
+- `kill`: Gets the job from the provided jid, then sends SIGTERM with kill() to the fetched pid from jid.
+- `stop`: Gets the job from the provided jid, then sends SIGTSTP with kill() to the fetched pid from jid. Sets job status to STOPPED.
+- `exit`: Calls exit() with decision logic based on if a status is provided.
+- `ˆC`: The child recieves the SIGINT signal in handle_child_status, and process counter is decremented.
+- `ˆZ`: The child recieves the SIGTSTOP signal in handle_child_status, the terminal is saved, and the job status is set to STOPPED.
 
 ---
 
