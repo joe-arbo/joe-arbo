@@ -1,6 +1,6 @@
 # Project 3
 
-Project 3 focused on different types of AI reinforcement policies like value interation and Q-learning. Examples of each of the policies represented graphically are labled and included below. The squares represent possible moves on a game board and each policy weights choices differently. When these are applied to the PacMan avatar, its behavior changes according to what its current policy deems the best choice.
+Project 3 focused on different types of AI reinforcement policies like value iteration and Q-learning. Examples of each of the policies represented graphically are labeled and included below. The squares represent possible moves on a game board and each policy weights choices differently. When these are applied to the PacMan avatar, its behavior changes according to what its current policy deems the best choice.
 
 #### Value Iteration
 <img src="./value.png" alt="Value Iteration" width="400"/>
