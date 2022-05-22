@@ -18,7 +18,9 @@ It's not the prettiest devise on the planet but it was the first time I'd engine
 
 ### [Real-Time Systems](./Real-Time%20Systems)
 
+This section includes all projects from my Advanced Real-Time Systems class. RTS was an interesting class based on the FreeRTOS real-time operating system. Most of the class focused on the scheduling of tasks in an OS and the different methods to do so. For example, RM and DM scheduling are accurately modeled in one of the projects, and tasks are simulated using an Arduino file. FreeRTOS has a library usable in Arduino and gives greater system-level control over applications running on Arduino compatible microcontrollers (in our case an Arduino Mega). 
 
+There are 3 sub-folders detailed in this section. For more information on each click this sections header.
 
 ---
 
