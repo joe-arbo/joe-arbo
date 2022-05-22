@@ -18,7 +18,7 @@ Shell closes on unsupported command
 
 ---
 
-### Description of Base Functionality
+### Description of Base Functionality (Commands)
 - `jobs`: Iterates through all jobs which exist, and calls print_job on each.
 - `fg`: Gets the job from the provided jid, then sends SIGCONT with kill() to the fetched pid from jid. Moves job to foreground and gives it the terminal.
 - `bg`: Gets the job from the provided jid, then sends SIGCONT with kill() to the fetched pid from jid. Moves job to background.
