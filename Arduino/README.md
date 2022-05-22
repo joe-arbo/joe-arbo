@@ -7,9 +7,10 @@ This is my favorite personal project I've worked on. Oddly enough there wasn’t
 
 Thus, the Can Crusher was born. My idea was to create a contraption that the old men could throw their cans into, that would then feed those cans into a crusher chamber, automatically crush the can, and then spit the crushed can into a bucket. I figured this would entertain their technology detached brains just enough to avoid having to baby sit them. I went through many design iterations and ended up building one prototype that worked very well. It used an Arduino Uno for the brains, a light sensor to detect cans, a compressed air piston as the crusher, and a couple relays to control a solenoid valve. 
 
-It's not the prettiest devise on the planet but it was the first time I'd engineered something from start to finish. It's still one of my fondest summers and even though the code is not complex, and the idea is simple, it remains by favorite project. I've embedded a video below of the Can Crusher in action and a static picture.
+It's not the prettiest devise on the planet but it was the first time I'd engineered something from start to finish. It's still one of my fondest summers and even though the code is not complex, and the idea is simple, it remains by favorite project. I've linked a video below of the Can Crusher in action.
 
-![Can Crusher Video](./Can_Crusher/crusher_vid.mp4)
+<a href="https://youtube.com/shorts/ebb4qq3fnJ4?feature=share" target="_blank">
+<!-- <img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 
 ### [Real-Time Systems](./Real-Time%20Systems)
 
