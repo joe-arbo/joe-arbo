@@ -4,7 +4,7 @@ This was the first true project of the course and dealt with AI search algorithm
 
 An example of one such maze and the found correct path can be seen below.
 
-<img src="./search.png" alt="Search Maze" width="400"/>
+<img src="./search.png" alt="Search Maze" width="500"/>
 
 All relevent files are in [search](./search/).
 
