@@ -11,6 +11,7 @@ It's not the prettiest devise on the planet but it was the first time I'd engine
 
 <a href="https://youtube.com/shorts/ebb4qq3fnJ4?feature=share" target="_blank">
 <img src="./Can_Crusher/crusher_pic.png" alt="Crusher Picture" height="350"/></a>
+
 (Click image above to watch video!)
 
 ---
@@ -21,4 +22,4 @@ It's not the prettiest devise on the planet but it was the first time I'd engine
 
 The Smart Home project was a simple bluetooth based Android application using Arduino that I worked on with a friend. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, LCD displays and Android applications. This project helped me devolop the [Can Crusher](./Can_Crusher) later on and gave me an understanding of Android apps and how to use bluetooth modules with an Arduino microcontroller. I've attached some images of the system below.
 
-<img src="./Arduino/SmartHome/breadboard.jpg" alt="Breadboard" width="450"/><img src="./Arduino/SmartHome/GUI.png" alt="App GUI" height="350"/>
+<img src="./SmartHome/breadboard.jpg" alt="Breadboard" width="450"/><img src="./SmartHome/GUI.png" alt="App GUI" height="350"/>
