@@ -26,7 +26,7 @@ The other personal project was a simple bluetooth based Android application usin
 
 This class was adapted from a course at UC Berkeley and used by the Virginia Tech CS department. As a result, most projects are accredited to individuals belonging to UC Berkeley. The class explores common AI principles from simple search algorithms, to Q-learning, to Inference Observation. I completed 5 main projects here that use a Pac-Man-like game interface to demonstrate these core concepts. 
 
-Each project is housed inside its own folder and has an index.html file explaining how to run the tests and what was required for each project. There is also a README in each project folder explaining briefly what the project entailed and what concepts it taught, as well as pictures of what each program's GUI looks like at run-time to demonstrate their functionality.  
+Each project is housed inside its own folder and has an `index.html` file explaining how to run the tests and what was required for each project. There is also a README in each project folder explaining briefly what the project entailed and what concepts it taught, as well as pictures of what each program's GUI looks like at run-time to demonstrate their functionality.  
 
 Here are some run-time GUI examples (Iteration and Inference respectively):
 
