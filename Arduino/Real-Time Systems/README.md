@@ -23,3 +23,5 @@ There are parts missing in `scheduler.cpp` that are completed in [Project 3](#pr
 ---
 
 ### [Project 3](./P3/)
+
+Project 3 is a continuation of [Project 2](#project-2) in that it completely implements 2 different scheduling protocols (RM and DM). `P3.ino` is identical `project2.ino` with the addition of extra task sets. `rm_scheduler.cpp` and `dm_scheduler.cpp` house the modified code from `scheduler.cpp` but changes its functionality according to the rules of each respective protocol.
