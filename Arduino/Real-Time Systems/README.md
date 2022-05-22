@@ -4,7 +4,7 @@ Below are brief descriptions of what each of the 3 projects entailed. These are 
 
 ---
 
-## [Project 1](./P1/)
+### [Project 1](./P1/)
 
 ---
 
