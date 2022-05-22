@@ -10,19 +10,19 @@ If you are seeing this on my Profile page, you can navigate to the main reposito
 
 ---
 
-### [Arduino](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino)
+### [Arduino](./Arduino)
 
 Includes two personal projects and all projects from my Advanced Real-Time Systems class. RTS was an interesting class based on the FreeRTOS real-time operating system. Most of the class focused on the scheduling of tasks in an OS and the different methods to do so. For example, RM and DM scheduling are accurately modeled in one of the projects, and tasks are simulated using an Arduino file. FreeRTOS has a library usable in Arduino and gives greater system-level control over applications running on Arduino compatible microcontrollers (in our case an Arduino Mega). 
 
-As for the personal projects, my favorite is included in this section. It was inspired by the COVID closures and my Dad's drinking buddies now deciding their new "watering hole" would be my driveway. It's not the most complex project, but it was the most fun I had designing something and it allowed me to step outside my comfort zone. Take a shortcut to it [HERE](https://github.com/joe-arbo/joe-arbo/tree/main/Arduino/Can_Crusher).
+As for the personal projects, my favorite is included in this section. It was inspired by the COVID closures and my Dad's drinking buddies now deciding their new "watering hole" would be my driveway. It's not the most complex project, but it was the most fun I had designing something and it allowed me to step outside my comfort zone. Take a shortcut to it [HERE](./Arduino/Can_Crusher).
 
-The other personal project was a simple bluetooth based Android application using Arduino that I worked on with a friend. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, and Android applications. None of this was intended for deployable use. You can see some examples of this project below.
+The other personal project was a simple bluetooth based Android application using Arduino that I worked on with a friend. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, LCD displays and Android applications. The file included here is only the Arduino portion of the project. None of this was intended for deployable use. You can see some examples of this project below.
 
-<img src="./Arduino/Bluetooth/breadboard.jpg" alt="Breadboard" width="450"/><img src="./Arduino/Bluetooth/GUI.png" alt="App GUI" height="350"/>
+<img src="./Arduino/SmartHome/breadboard.jpg" alt="Breadboard" width="450"/><img src="./Arduino/SmartHome/GUI.png" alt="App GUI" height="350"/>
 
 ---
 
-### [Artificial Intelligence](https://github.com/joe-arbo/joe-arbo/tree/main/Artificial%20Intelligence)
+### [Artificial Intelligence](./Artificial%20Intelligence)
 
 This class was adapted from a course at UC Berkeley and used by the Virginia Tech CS department. As a result, most projects are accredited to individuals belonging to UC Berkeley. The class explores common AI principles from simple search algorithms, to Q-learning, to Inference Observation. I completed 5 main projects here that use a Pac-Man-like game interface to demonstrate these core concepts. 
 
@@ -34,7 +34,7 @@ Here are some run-time GUI examples (Iteration and Inference respectively):
 
 ---
 
-### [Computer Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Computer%20Systems)
+### [Computer Systems](./Computer%20Systems)
 
 This was one of the more difficult classes I took while getting my degree. Its purpose was to explore and demonstrate how an OS works under the hood using primarily C. The projects were difficult and taught concepts like process management, memory allocation, secure servers, and multithreaded workloads.
 
@@ -44,7 +44,7 @@ This class provides many support files for the completion of its projects so not
 
 ---
 
-### [Data Structures and Algorithms](https://github.com/joe-arbo/joe-arbo/tree/main/Data%20Structures%20and%20Algorithms)
+### [Data Structures and Algorithms](./Data%20Structures%20and%20Algorithms)
 
 The name of this course speaks for itself. It explores common data structures and sorting algorithms and how to utilize them in programming applications. This class covered external sorting using a Min-Heap and Merge Sort, key-value pair sorting using hash maps, and key-value pair sorting using a skip list and Quad-Tree. This class was partner based and all files were worked on by both my partner and me. The author of each file is listed in the JavaDocs of said file and only indicates the creator, it does not reflect work done.
 
@@ -54,7 +54,7 @@ These projects are hard to show graphically and even harder to run while showing
 
 ---
 
-### [Embedded Systems](https://github.com/joe-arbo/joe-arbo/tree/main/Embedded%20Systems)
+### [Embedded Systems](./Embedded%20Systems)
 
 The primary focus of my Embedded Systems course was to learn how to interface with the MSP432P401R LaunchPad microcontroller and its BoosterPack hardware module. There are 3 projects for this class, each building on the last. The first project focuses on learning how the MSP and BoosterPack communicate with one another, project two focuses on the GUI elements and the interaction between the microcontroller and UART keyboard inputs, and the third project focused on making a fully functional game using the BoosterPacks controls. 
 
@@ -64,7 +64,7 @@ This class was programmed in C and uses the MSPs ports (similar to Arduino) to w
 
 ---
 
-### [IEEE Robotics 2022](https://github.com/joe-arbo/joe-arbo/tree/main/IEEE%20Robotics%202022)
+### [IEEE Robotics 2022](./IEEE%20Robotics%202022)
 
 This project served as my senior capstone and as an opportunity to dive into the world of robotics, which prior to this, I had little experience with. The projects requirements were to build a robot that could compete at IEEE Southeast Con 2022 in Mobile, Alabama. Each year IEEE holds a robotics competition during their conference and Virginia Tech usually participates. The team had a lot of creative freedom with this project, which made it a very enjoyable experience. 
 
@@ -76,19 +76,23 @@ This section is basically our team GitHub copied for my own personal records. I 
 
 ---
 
-### [Large Scale Software Development](https://github.com/joe-arbo/joe-arbo/tree/main/Large%20Scale%20Software%20Development)
+### [Large Scale Software Development](./Large%20Scale%20Software%20Development)
 
-This class was more about concepts then actual coding, but I wanted to include it here because it taught me many valuable coding methodologies that are utilized in the industry. These ranged from individual coding techniques (e.g., Singleton, State Machines), to developmental practices (e.g., Scrum, Waterfall). This section only cosists of one project that implemented the methods learned during the course. Most importantly, we used Scrum to manage our team workflow, allowing me to become familiar with the most common developmental managment system. 
+This class was more about concepts then actual coding, but I wanted to include it here because it taught me many valuable coding methodologies that are utilized in the industry. These ranged from individual coding techniques (e.g., Singleton, State Machines), to developmental practices (e.g., Scrum, Waterfall). This section only consists of one project that implemented the methods learned during the course. Most importantly, we used Scrum to manage our team workflow, allowing me to become familiar with the most common developmental management system. 
 
-The project itself is not very complex and was coding in C++ and implemented with Qt. Its a GUI based workout scheduling app that was only completed to get the class familiar with Scrum. As with other classes this project was completed as a group but many of the files were at least modified by me if not coded in their entirety. Below you can see some examples of the GUI.
+The project itself is not very complex and was coding in C++ and implemented with Qt. It’s a GUI based workout scheduling app that was only completed to get the class familiar with Scrum. As with other classes this project was completed as a group but many of the files were at least modified by me if not coded in their entirety. Below you can see some examples of the GUI.
 
-
+<img src="./Large%20Scale%20Software%20Development/calendar.png" alt="Calendar" width="375"/><img src="./Large%20Scale%20Software%20Development/exercise.png" alt="Exercise" width="425"/>
 
 ---
 
-### [Software Reverse Engineering](https://github.com/joe-arbo/joe-arbo/tree/main/Software%20Reverse%20Engineering)
+### [Software Reverse Engineering](./Software%20Reverse%20Engineering)
 
+Reverse engineering is a topic I have very little experience with. This course represents the extent of my knowledge, and while this is not something I plan to pursue as a career, I felt it important to mention the skills learned from it. We used the NSAs disassembler and decompiler Ghidra for most of this class and learned how to change binaries back into human readable code, how to reverse engineer and analyze malware, and how to find and exploit vulnerabilities in software.
 
+Although difficult, I found this subject extremely interesting. I gained a much deeper understanding of how computers process executables, what binary files actually contain, and how to manipulate the tools we were provided to solve relatively complex problems hiding inside executable files. This class was a lot of fun and I really think I took a lot of good information away from it, even if it doesn't really pertain all that much to software engineering. 
+
+The assignments in this section are hard to represent graphically, so I did my best to describe what the purpose of each was and what concepts were learned from them. There’s not much to this section but I wanted to document what I learned so I could come back to this and keep learning later.
 
 ---
 
