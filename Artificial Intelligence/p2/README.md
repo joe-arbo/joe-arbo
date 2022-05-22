@@ -4,7 +4,7 @@ Project 2 focused on Multi-Agent Searches and various evaluation methods like Mi
 
 <img src="./pacman_multi_agent.png" alt="Multi-Agent" width="500"/>
 
-The code was then adapted to allow the multi-agent structure to be simulated using a varity of evaluation techniques. There are individual functions for MiniMax, ExpectiMax, and Alpha-Beta Pruning. An example of an Alpha-Beta Pruning implementation diagram can be seen below.
+The code was then adapted to allow the multi-agent structure to be simulated using a variety of evaluation techniques. There are individual functions for MiniMax, ExpectiMax, and Alpha-Beta Pruning. An example of an Alpha-Beta Pruning implementation diagram can be seen below.
 
 <img src="./alpha_beta_impl.png" alt="Multi-Agent" width="500"/>
 
