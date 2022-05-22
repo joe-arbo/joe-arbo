@@ -4,12 +4,12 @@ Below are brief descriptions of what each of the 3 projects entailed. These are 
 
 ---
 
-# [Project 1](./P1/)
+## [Project 1](./P1/)
 
 ---
 
-# [Project 2](./P2/)
+### [Project 2](./P2/)
 
 ---
 
-# [Project 3](./P3/)
+### [Project 3](./P3/)
