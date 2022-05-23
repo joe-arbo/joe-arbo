@@ -1,10 +1,12 @@
+# Project 1
+
 ## Example Summary
 
 This demo uses the MSP432 built-in eUSCI module in I2C mode to initialize and gather light data from the digital ambient light sensor, OPT3001, on the Educational BoosterPack MKII. The measured illuminance value (Lux) is displayed on the BoosterPack's colored 128x128 dot-matrix LCD. Using MSP Graphics Library, the MSP432 sends data to the LCD's controller through SPI communication to display the data.
 
 ## BoosterPack Requirements
 
-This demo requires the [Educational BoosterPack MKII (BOOSTXL-EDUMKII)](http://www.ti.com/tool/BOOSTXL-EDUMKII)paired with the MSP-EXP432P401R LaunchPad
+This demo requires the [Educational BoosterPack MKII (BOOSTXL-EDUMKII)](http://www.ti.com/tool/BOOSTXL-EDUMKII) paired with the MSP-EXP432P401R LaunchPad
 
 ## Example Usage
 
