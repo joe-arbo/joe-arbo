@@ -6,13 +6,13 @@ Despite the more in-depth information in each project folder, I have still inclu
 
 ---
 
-#### [Project 0](./p0/) - Inroduction to Python
+#### [Project 0](./p0/) - Introduction to Python
 
 #### [Project 1](./p1/) - AI Search Algorithms
 
 #### [Project 2](./p2/) - Agents, MiniMax, ExpectiMax, and Alpha-Beta Pruning
 
-#### [Project 3](./p3/) - Value Interation, Policies, and Q-Learning
+#### [Project 3](./p3/) - Value Iteration, Policies, and Q-Learning
 
 #### [Project 4](./p4/) - Exact and Approximate Inference
 
