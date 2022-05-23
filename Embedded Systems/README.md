@@ -8,6 +8,6 @@ A brief description of each project is included below and more information, as w
 
 #### [Project 1](./project1/) - Introduction to the MSP432 and BoosterPack
 
-#### [Project 2](./project2/) - Tamagatchi Simulation
+#### [Project 2](./project2/) - Tamagotchi Simulation
 
 #### [Project 3](./project3/) - Mini-Game using BoosterPack
