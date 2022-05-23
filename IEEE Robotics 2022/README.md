@@ -5,7 +5,7 @@ This project’s requirements were to build a robot that could compete at IEEE S
 The team was comprised of many sub-teams of which I was the leader of 2. I began as the arm team lead and worked to finalize the design and functionality of the arm sub-system. I also structured the code for the arm which would later be implemented into the final robot. I then moved to the navigation/sensor sub-team and was designated team lead upon my arrival. Here I worked to finalize the sensor code (PID system for active movement correction) and wrote code to allow the wheels/motors to communicate with the sensors.
 
 Team Pic:
-<img src="./team_pic.png" alt="Team Pic" width="400"/>
+<img src="./team_pic.jpg" alt="Team Pic" width="400"/>
 
 This project was a huge success! We ended up placing 1st out of 28 teams in attendance. Here are the rankings:
 
