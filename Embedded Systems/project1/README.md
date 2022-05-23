@@ -6,6 +6,8 @@ This project uses the MSP432 built-in eUSCI module in I2C mode to initialize and
 
 This project requires the [Educational BoosterPack MKII (BOOSTXL-EDUMKII)](http://www.ti.com/tool/BOOSTXL-EDUMKII) paired with the MSP-EXP432P401R LaunchPad
 
+<img src="./boostxl-edumkii-angled.png_large" alt="MSP_GUI_Example" width="450"/>
+
 ## Example Usage
 
 Upon running the project, the LCD on the BoosterPack displays the illuminance light sensor data in Lux.
