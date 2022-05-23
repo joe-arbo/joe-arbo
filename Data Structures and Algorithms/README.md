@@ -8,14 +8,16 @@ Instead of including a README in each sub-folder, I've opted to describe each pr
 
 ### [External Sorting](./ExternalSorting/)
 
-
+First, a text file is parsed and its data is pulled out as commands and records (e.g. add record1). Using these commands, each record is inserted into a MinHeap data structure and sorted using replacement sort. The data, which at this point, is broken up into multiple chucks, is merged using Multi-way Merge (an external sorting technique). Once all the data has been handled, a record of the actions taken are output to the console for automatic grading.
 
 ---
 
 ### [Movie Manager](./MovieManager/)
 
-
+Similar to `ExternalSorting`, this project also parses data from a text file in the form of commands and records. This time the records are Movies being stored in a data base. The records are then inserted into a Hash Map using the Key-Value pairs assigned to them at their creation. `MemMan.java` then performs the collected commands from the parsing stage on the data in the Hash Map. This project familiarized us with Hash Maps and how they store data.
 
 ---
 
 ### [Quad Tree](./PRQuadTree/)
+
+Again, data is parsed from a text file and interpreted as commands and records. The records are stored in both a QuadTree (a type of binary search tree) and a SkipList. Each of these data structure sorts the data in its own way and then preforms the same commands on said data. At the end of execution, the output of each data structure is compared to make sure each is handling the data correctly.
