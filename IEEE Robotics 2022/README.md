@@ -11,6 +11,10 @@ This project was a huge success! We ended up placing 1st out of 28 teams in atte
 
 <img src="./ranking.png" alt="Rankings" width="500"/>
 
+---
+
+### Technical Details
+
 The robots main goal was to navigate and complete tasks on a game board designed by IEEE. The robot we designed used a 5 degree of freedom arm with a camera mounted on it. The camera was trained via TensorFlow and OpenCL (two modern Computer Vision tools) to be able to recognize objects on the game board. The robot also utilized a clever catapult design to launch objects during the run-time of the course. It was required that the robot be able to pick up and throw objects of interest (found by the camera) into various nets (also found by the camera). All these sub-systems were run on an Arduino and Raspberry Pi. A picture of the front of the robot has been included below.
 
 <img src="./robot_front.png" alt="Robot Front" width="400"/>
