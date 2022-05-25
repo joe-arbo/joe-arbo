@@ -10,6 +10,6 @@ Rio Cross
 
 ---
 
-### How to Execute the Shell
+### How to Execute the Program
 - Run 'make'
 - Run './threadpool'
