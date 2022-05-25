@@ -88,7 +88,7 @@ The project itself is not very complex and was coded in C++ and implemented with
 
 ### [Software Reverse Engineering](./Software%20Reverse%20Engineering)
 
-Reverse engineering is a topic I have very little experience with. This course represents the extent of my knowledge, and while this is not something I plan to pursue as a career, I felt it important to mention the skills learned from it. We used the NSAs disassembler and decompiler Ghidra for most of this class and learned how to change binaries back into human readable code, how to reverse engineer and analyze malware, and how to find and exploit vulnerabilities in software.
+Reverse engineering is a topic I have very little experience with. This course represents the extent of my knowledge, and while this is not something I plan to pursue as a career, I felt it important to mention the skills learned from it. We used the NSAs disassembler and decompiler `Ghidra` for most of this class and learned how to change binaries back into human readable code, how to reverse engineer and analyze malware, and how to find and exploit vulnerabilities in software.
 
 Although difficult, I found this subject extremely interesting. I gained a much deeper understanding of how computers process executables, what binary files actually contain, and how to manipulate the tools we were provided to solve relatively complex problems hiding inside executable files. This class was a lot of fun and I really think I took a lot of good information away from it, even if it doesn't really pertain all that much to software engineering. 
 
