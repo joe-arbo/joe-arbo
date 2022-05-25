@@ -8,4 +8,4 @@ An example of one such maze and the found correct path can be seen below.
 
 All relevent files are in [search](./search/).
 
-Access `index.html` [HERE](https://htmlpreview.github.io/?https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p1/index.html)
+### Access `index.html` [HERE](https://htmlpreview.github.io/?https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p1/index.html)
