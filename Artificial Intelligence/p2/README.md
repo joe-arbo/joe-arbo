@@ -10,4 +10,4 @@ The code was then adapted to allow the multi-agent structure to be simulated usi
 
 All relevent files are in [multiagent](./multiagent/).
 
-Access `index.html` [HERE](https://htmlpreview.github.io/?https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p2/index.html)
+### Access `index.html` [HERE](https://htmlpreview.github.io/?https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p2/index.html)
