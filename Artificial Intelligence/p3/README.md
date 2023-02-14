@@ -19,4 +19,4 @@ Project 3 focused on different types of AI reinforcement policies like value ite
 
 All relevent files are in [reinforcement](./reinforcement/).
 
-Access `index.html` [HERE](https://htmlpreview.github.io/?https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/index.html)
+### Access `index.html` [HERE](https://htmlpreview.github.io/?https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p3/index.html)

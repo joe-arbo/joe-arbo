@@ -5,9 +5,9 @@ Project 4 explored exact and approximate inference with and without Time Elapse.
 #### Exact Inference
 <img src="./busters.png" alt="Exact Inference" width="500"/>
 
-#### Aproximate Inference
+#### Approximate Inference
 <img src="./disperse.png" alt="Approximate Inference" width="500"/>
 
 All relevent files are in [tracking](./tracking/).
 
-Access `index.html` [HERE](https://htmlpreview.github.io/?https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/index.html)
+### Access `index.html` [HERE](https://htmlpreview.github.io/?https://github.com/joe-arbo/joe-arbo/blob/main/Artificial%20Intelligence/p4/index.html)

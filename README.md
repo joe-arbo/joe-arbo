@@ -1,10 +1,10 @@
-# Hi there 👋, I'm Joseph Arbolino
+# Hi there 👋, I'm Joe
 
 ### Thanks for stopping in!
 
-This is a collection of all the projects and exercises I completed or collaborated on. I have tried to make this GitHub as user-friendly as possible and have included as many explanations, pictures, examples, and directions for execution as I could. Most of these projects were completed during my college career and therefore include many files needed for the execution of the programs but that I didn't write myself. These files were all interfaced with during the completion of the projects so I do understand how all the code works and what its purpose is, but it would be wrong of me to pass these on as my own work. 
+This is a collection of all the projects and exercises I've completed or collaborated on. I have tried to make this GitHub as user-friendly as possible and have included as many explanations, pictures, examples, and directions for execution as I could. Most of these projects were completed during my time at college and therefore, they include many files needed for the execution of the programs, but that I didn't write myself. These files were all interfaced with during the completion of the projects so I do understand how all the code works and what its purpose is, but it would be wrong of me to pass these particualar files on as my own work. 
 
-This is also the reason GitHub reports the language variance to be ~70% Python. Most of the supporting files provided for us were written in Python so the actual split between the languages I actively practice and code in is more even. Below is a table of contents (of a sort) giving an overview of what each folder in this repository contains. There will be more information provided in each folder, if you have any questions please do not hesitate to contact me with the details found in the [Contact Information](#contact-information) section.
+You might have noticed that GitHub reports the language variance to be ~70% Python. This is also a consequence of the extraneous files I mentioned above. Most of the supporting files provided for us were written in Python, so the actual split between the languages I actively practice is more even. Below is a table of contents (of a sort) giving an overview of what each folder in this repository contains. There will be more information provided in each folder. If you have any questions, please do not hesitate to contact me with the details found in the [Contact Information](#contact-information) section.
 
 If you are seeing this on my Profile page, you can navigate to the main repository by clicking [HERE](https://github.com/joe-arbo/joe-arbo), otherwise you can navigate to the individual folders described below by clicking on their header.
 
@@ -14,17 +14,17 @@ If you are seeing this on my Profile page, you can navigate to the main reposito
 
 Includes two personal projects and all projects from my Advanced Real-Time Systems class. RTS was an interesting class based on the FreeRTOS real-time operating system. Most of the class focused on the scheduling of tasks in an OS and the different methods to do so. For example, RM and DM scheduling are accurately modeled in one of the projects, and tasks are simulated using an Arduino file. FreeRTOS has a library usable in Arduino and gives greater system-level control over applications running on Arduino compatible microcontrollers (in our case an Arduino Mega). 
 
-As for the personal projects, my favorite is included in this section. It was inspired by the COVID closures and my Dad's drinking buddies now deciding their new "watering hole" would be my driveway. It's not the most complex project, but it was the most fun I had designing something and it allowed me to step outside my comfort zone. Take a shortcut to it [HERE](./Arduino/Can_Crusher).
+As for the personal projects, my favorite is included in this section. It was inspired by the COVID closures and my Dad's drinking buddies now deciding their new "watering hole" would be my driveway. It's not the most complex project, but it was the most fun I had designing something and it allowed me to step outside my comfort zone.
 
 The other personal project was a simple bluetooth based Android application using Arduino that I worked on with a friend. The purpose of this project was to become more familiar with breadboard wiring, bluetooth modules, LCD displays and Android applications. The file included here is only the Arduino portion of the project. None of this was intended for deployable use. You can see some examples of this project below.
 
-<img src="./Arduino/SmartHome/breadboard.jpg" alt="Breadboard" width="450"/><img src="./Arduino/SmartHome/GUI.png" alt="App GUI" height="350"/>
+<img src="./Arduino/SmartHome/breadboard.jpg" alt="Breadboard" width="450"/>
 
 ---
 
 ### [Artificial Intelligence](./Artificial%20Intelligence)
 
-This class was adapted from a course at UC Berkeley and used by the Virginia Tech CS department. As a result, most projects are accredited to individuals belonging to UC Berkeley. The class explores common AI principles from simple search algorithms, to Q-learning, to Inference Observation. I completed 5 main projects here that use a Pac-Man-like game interface to demonstrate these core concepts. 
+This class was adapted from a course at UC Berkeley and used by the Virginia Tech CS department. As a result, most files are accredited to individuals belonging to UC Berkeley. The class explores common AI principles from simple search algorithms, to Q-learning, to Inference Observation. I completed 5 main projects here that use a Pac-Man-like game interface to demonstrate these core concepts. 
 
 Each project is housed inside its own folder and has an `index.html` file explaining how to run the tests and what was required for each project. There is also a README in each project folder explaining briefly what the project entailed and what concepts it taught, as well as pictures of what each program's GUI looks like at run-time to demonstrate their functionality.  
 
@@ -88,7 +88,7 @@ The project itself is not very complex and was coded in C++ and implemented with
 
 ### [Software Reverse Engineering](./Software%20Reverse%20Engineering)
 
-Reverse engineering is a topic I have very little experience with. This course represents the extent of my knowledge, and while this is not something I plan to pursue as a career, I felt it important to mention the skills learned from it. We used the NSAs disassembler and decompiler Ghidra for most of this class and learned how to change binaries back into human readable code, how to reverse engineer and analyze malware, and how to find and exploit vulnerabilities in software.
+Reverse engineering is a topic I have very little experience with. This course represents the extent of my knowledge, and while this is not something I plan to pursue as a career, I felt it important to mention the skills learned from it. We used the NSAs disassembler and decompiler `Ghidra` for most of this class and learned how to change binaries back into human readable code, how to reverse engineer and analyze malware, and how to find and exploit vulnerabilities in software.
 
 Although difficult, I found this subject extremely interesting. I gained a much deeper understanding of how computers process executables, what binary files actually contain, and how to manipulate the tools we were provided to solve relatively complex problems hiding inside executable files. This class was a lot of fun and I really think I took a lot of good information away from it, even if it doesn't really pertain all that much to software engineering. 
 
