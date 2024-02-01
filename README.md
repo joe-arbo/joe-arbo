@@ -106,7 +106,7 @@ Bachelor’s: Computer Engineering<br>
 Major: Software Systems<br>
 Minor: Computer Science<br>
 
-Email: joearbo13@vt.edu<br>
+Email: josephfarbolino@hotmail.com<br>
 Cell: 973-590-1442
 
 <!--
