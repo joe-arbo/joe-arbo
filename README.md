@@ -42,6 +42,8 @@ This section contains 4 major projects and some exercises completed in this clas
 
 This class provides many support files for the completion of its projects so not every file was developed by me or my partner. I have tried to properly document files that may have other contributors, but it is difficult to point out which parts in every file were edited by my partner and me. Because of this, I will state a disclaimer that even though most files were, at the very least, modified by my partner and me, I cannot guarantee that all work viewed belongs to us. All files are necessary for the execution of these programs so removing any of them is not an option, but if any questions arise as to the specifics of any files, please do not hesitate to reach out. ([Contact Information](#contact-information))
 
+NOTE: This section has been removed.
+
 ---
 
 ### [Data Structures and Algorithms](./Data%20Structures%20and%20Algorithms)
